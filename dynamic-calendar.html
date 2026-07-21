@@ -25,7 +25,7 @@
         <li class="dropdown"><a href="dynamic-calendar.html" class="active">Calendar</a>
           <ul class="dropdown-menu">
             <li><a href="pta-meetings.html">PTA Info &amp; Meetings</a></li>
-            <li><a href="https://docs.google.com/document/d/1RHK9qXjPZSIPFRprc0sgMYksn7cwLczM8dtfHMgRUe8/edit?usp=sharing" target="_blank" rel="noopener">Year-at-a-Glance</a></li>
+            <li><a href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Year-at-a-Glance</a></li>
             <li><a href="dynamic-calendar.html">Calendar</a></li>
           </ul>
         </li>
@@ -59,15 +59,22 @@
 <section class="section">
   <div class="container">
     <p class="center">
-      <a class="btn btn-teal" href="https://docs.google.com/document/d/1RHK9qXjPZSIPFRprc0sgMYksn7cwLczM8dtfHMgRUe8/edit?usp=sharing" target="_blank" rel="noopener">Year-at-a-Glance</a>
+      <a class="btn btn-teal" href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Year-at-a-Glance</a>
     </p>
 
-    <!-- TODO: Replace CALENDAR_ID_GOES_HERE with the PTA's public Google Calendar ID
-         (Google Calendar > Settings > "Integrate calendar" > Calendar ID, e.g.
-         something@group.calendar.google.com). The calendar must be set to public. -->
+    <!-- Live 2026-27 events calendar: a Google Doc maintained by the PTA. -->
+    <div class="calendar-embed" style="aspect-ratio:3/4;max-width:840px;margin:0 auto">
+      <iframe src="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/preview" title="Will Rogers PTA 2026-27 Events Calendar"></iframe>
+    </div>
+    <p class="center" style="margin-top:16px"><a href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Open the calendar full screen</a></p>
+    <!-- Alternative: embed a public Google Calendar instead. Replace CALENDAR_ID_GOES_HERE
+         with the calendar ID from Google Calendar > Settings > "Integrate calendar"
+         (looks like xxxx@group.calendar.google.com; calendar must be public), then
+         uncomment:
     <div class="calendar-embed">
       <iframe src="https://calendar.google.com/calendar/embed?src=CALENDAR_ID_GOES_HERE&ctz=America%2FLos_Angeles&mode=MONTH" title="Will Rogers PTA Calendar"></iframe>
     </div>
+    -->
   </div>
 </section>
 
