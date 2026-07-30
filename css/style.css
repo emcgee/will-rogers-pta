@@ -239,6 +239,26 @@ img { max-width: 100%; height: auto; }
 .ib-strip p { margin: 0; color: var(--ink); font-size: 1.02rem; }
 .ib-strip strong { font-family: var(--heading-font); }
 
+/* ---------- Save-the-date placeholder ---------- */
+.save-the-date {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--cyan) 60%, var(--sage) 130%);
+  color: #fff; text-align: center; border-radius: var(--radius);
+  padding: 44px 26px; margin: 8px auto 28px; max-width: 620px;
+  box-shadow: var(--card-shadow);
+}
+.save-the-date__emoji { font-size: 3rem; line-height: 1; display: block; margin-bottom: 6px; }
+.save-the-date__kicker {
+  font-family: var(--heading-font); font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; font-size: 0.9rem; color: var(--gold); margin: 0 0 6px;
+}
+.save-the-date__date {
+  font-family: var(--display-font); font-weight: 800; letter-spacing: -0.01em;
+  font-size: clamp(1.6rem, 4vw, 2.3rem); color: #fff; margin: 0;
+}
+.save-the-date__time { font-size: 1.3rem; font-weight: 700; margin: 4px 0 0; color: #fff; }
+.save-the-date__note { margin: 14px 0 0; color: rgba(255,255,255,0.9); font-size: 1rem; }
+
 /* ---------- Engagement CTA band ---------- */
 .cta-band {
   background: linear-gradient(120deg, var(--teal) 0%, var(--cyan) 100%);
