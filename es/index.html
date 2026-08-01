@@ -16,16 +16,16 @@
   <meta property="og:title" content="Inicio | Will Rogers PTA">
   <meta property="og:description" content="La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.">
   <meta property="og:url" content="https://www.willrogerspta.com/es/">
-  <meta property="og:image" content="https://www.willrogerspta.com/images/hero-home.jpg">
+  <meta property="og:image" content="https://www.willrogerspta.com/images/heroes/holi1.png">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Inicio | Will Rogers PTA">
   <meta name="twitter:description" content="La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.">
-  <meta name="twitter:image" content="https://www.willrogerspta.com/images/hero-home.jpg">
+  <meta name="twitter:image" content="https://www.willrogerspta.com/images/heroes/holi1.png">
   <!-- /seo -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"NGO","name":"Will Rogers PTA","alternateName":"Will Rogers Learning Community PTA","url":"https://www.willrogerspta.com/es/","logo":"https://www.willrogerspta.com/images/pta-logo.jpg","image":"https://www.willrogerspta.com/images/hero-home.jpg","description":"La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.","email":"communications@willrogerspta.com","telephone":"","taxID":"23-7017326","address":{"@type":"PostalAddress","streetAddress":"2401 14th Street","addressLocality":"Santa Monica","addressRegion":"CA","postalCode":"90405","addressCountry":"US"},"sameAs":["https://www.facebook.com/willrogerslc","https://instagram.com/willrogersnews","https://twitter.com/willrogersstem"]}
+  {"@context":"https://schema.org","@type":"NGO","name":"Will Rogers PTA","alternateName":"Will Rogers Learning Community PTA","url":"https://www.willrogerspta.com/es/","logo":"https://www.willrogerspta.com/images/pta-logo.jpg","image":"https://www.willrogerspta.com/images/heroes/holi1.png","description":"La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.","email":"communications@willrogerspta.com","telephone":"","taxID":"23-7017326","address":{"@type":"PostalAddress","streetAddress":"2401 14th Street","addressLocality":"Santa Monica","addressRegion":"CA","postalCode":"90405","addressCountry":"US"},"sameAs":["https://www.facebook.com/willrogerslc","https://instagram.com/willrogersnews","https://twitter.com/willrogersstem"]}
   </script>
   <link rel="icon" href="../images/pta-logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +33,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/site.js" defer></script>
+  <script>
+  /* Pick a random Will Rogers hero photo on each page load (set before paint = no flash).
+     Add or remove filenames here to change the rotation; files live in images/heroes/. */
+  (function () {
+    var heroes = ["RogersAssembly.png", "WRLC-ribbon-cutting2025.png", "earth-day25.png", "farm-stand.png", "holi1.png", "rogers-boys.png"];
+    var pick = heroes[Math.floor(Math.random() * heroes.length)];
+    document.documentElement.style.setProperty("--hero-img", 'url("/images/heroes/' + pick + '")');
+  })();
+  </script>
 </head>
 <body>
 

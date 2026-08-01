@@ -193,7 +193,7 @@ img { max-width: 100%; height: auto; }
 /* ---------- Home hero ---------- */
 .home-hero {
   position: relative; color: #fff; padding: 104px 22px 140px; text-align: center;
-  background: linear-gradient(rgba(9,57,67,0.62), rgba(14,127,150,0.52)), url("../images/hero-home.jpg") center 28% / cover no-repeat;
+  background: linear-gradient(rgba(9,57,67,0.62), rgba(14,127,150,0.52)), var(--hero-img, url("../images/heroes/RogersAssembly.png")) center 35% / cover no-repeat;
 }
 .home-hero__inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 2; }
 .home-hero .eyebrow { color: var(--gold); }
