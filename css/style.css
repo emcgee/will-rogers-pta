@@ -296,6 +296,29 @@ img { max-width: 100%; height: auto; }
 .cta-band p { max-width: 640px; margin: 0 auto 1.4em; font-size: 1.15rem; color: rgba(255,255,255,0.95); }
 .cta-band__btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
 
+/* ---------- Join page helpers ---------- */
+.cta-band .join-amount {
+  font-family: var(--display-font); font-weight: 800; line-height: 1;
+  font-size: clamp(4rem, 16vw, 7rem); color: #fff; margin: 0 0 6px; max-width: none;
+}
+.cta-band .join-amount span { color: var(--gold); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 9px; background: #fff;
+  border-radius: 999px; padding: 11px 20px; box-shadow: var(--card-shadow);
+  font-family: var(--heading-font); font-weight: 600; color: var(--ink); font-size: 1rem;
+}
+.chip .emoji { font-size: 1.3rem; line-height: 1; }
+
+.ticklist { list-style: none; padding: 0; margin: 0; }
+.ticklist li { position: relative; padding-left: 32px; margin-bottom: 10px; color: var(--text); }
+.ticklist li::before {
+  position: absolute; left: 0; top: -1px; font-weight: 800; font-size: 1.15rem;
+}
+.ticklist.no li::before  { content: "\2715"; color: var(--gold-600); }   /* not required */
+.ticklist.yes li::before { content: "\2713"; color: var(--sage-600); }   /* you get to */
+
 /* ---------- Cards ---------- */
 .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
