@@ -49,16 +49,24 @@ https://www.willrogerspta.com.
 3. New pages: copy an existing page, keep the header/footer blocks intact, add the
    page to the nav on every page only if it belongs in the menu. Create the Spanish
    counterpart in `es/` at the same time.
-4. Internal links use relative `*.html` hrefs (works locally and on Pages).
-   External links use `target="_blank" rel="noopener"`.
+4. Internal links are **extensionless** relative hrefs — `href="pta-meetings"`,
+   not `pta-meetings.html`. GitHub Pages serves `/pta-meetings` from
+   `pta-meetings.html`, so the file on disk keeps its `.html` name; only the link
+   drops it. Home links point to the language root: `/` on English pages, `/es/`
+   on Spanish pages. `canonical`/`og:url`/`hreflang` and `sitemap.xml` are
+   extensionless too — keep them in sync when adding pages. External links use
+   `target="_blank" rel="noopener"`.
 
 ## Testing changes
 
-Local preview: `python3 -m http.server -d .` then open http://localhost:8000
-(Spanish at `/es/`). Quick regression: check internal hrefs/srcs resolve to files
-on disk — for `es/` pages, resolve `../` relative to `es/` — confirm no page
-references `wixstatic.com`, and confirm the language toggle points to the matching
-page in the other language.
+Local preview: `python3 serve.py` then open http://localhost:8000 (Spanish at
+`/es/`). Use `serve.py`, **not** `python3 -m http.server` — the plain server
+can't resolve the extensionless URLs (it 404s on `/pta-meetings`); `serve.py`
+mirrors Pages by falling back to `foo.html`. Quick regression: check internal
+hrefs/srcs resolve (extensionless page links map to `<name>.html` on disk; for
+`es/` pages, resolve `../` relative to `es/`), confirm no page references
+`wixstatic.com`, and confirm the language toggle points to the matching page in
+the other language.
 
 ## Deploy
 
