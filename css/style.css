@@ -185,7 +185,9 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 1080px) {
   .nav-toggle { display: block; order: 3; }
   .site-nav { display: none; order: 4; flex-basis: 100%; background: #fff; border-radius: var(--radius-sm); margin-top: 8px; padding: 8px; box-shadow: var(--card-shadow); }
-  .site-nav.open { display: block; }
+  /* The header is sticky, so a menu taller than the screen can't rely on page
+     scroll — the menu itself must scroll. 118px ≈ header height above the menu. */
+  .site-nav.open { display: block; max-height: calc(100vh - 118px); max-height: calc(100dvh - 118px); overflow-y: auto; overscroll-behavior: contain; }
   .site-nav ul { flex-direction: column; align-items: stretch; gap: 0; }
   .site-nav a { padding: 12px 14px; }
   .site-nav a.active::after { display: none; }
