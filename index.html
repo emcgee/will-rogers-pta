@@ -37,7 +37,7 @@
   /* Pick a random Will Rogers hero photo on each page load (set before paint = no flash).
      Add or remove filenames here to change the rotation; files live in images/heroes/. */
   (function () {
-    var heroes = ["RogersAssembly.png", "WRLC-ribbon-cutting2025.png", "earth-day25.png", "farm-stand.png", "holi1.png", "rogers-boys.png"];
+    var heroes = ["RogersAssembly.png", "WRLC-ribbon-cutting2025.png", "earth-day25.png", "farm-stand.png", "holi1.png", "rogers-boys.png", "school-of-excellence-2025.jpg"];
     var pick = heroes[Math.floor(Math.random() * heroes.length)];
     document.documentElement.style.setProperty("--hero-img", 'url("/images/heroes/' + pick + '")');
   })();
