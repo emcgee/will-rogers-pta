@@ -540,3 +540,44 @@ a.social-card:hover { transform: translateY(-3px); box-shadow: var(--card-shadow
   .feature-event img { max-width: 320px; margin: 0 auto; }
   .feature-event ul { columns: 1; }
 }
+
+/* ---------- Quick CTA strip (home, directly under the hero) ---------- */
+.quick-cta { background: #fff; border-bottom: 1px solid rgba(9,57,67,0.08); padding: 22px 22px; }
+.quick-cta__inner { max-width: var(--wrap); margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.quick-cta a {
+  display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 68px;
+  padding: 12px 22px; border-radius: 999px; text-decoration: none; text-align: left;
+  font-family: var(--heading-font); font-weight: 600; font-size: 1.05rem; line-height: 1.2;
+  color: var(--ink); box-shadow: var(--card-shadow); border: 3px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.quick-cta a:hover { transform: translateY(-3px); box-shadow: var(--card-shadow-hover); }
+.quick-cta a .emoji { font-size: 1.7rem; line-height: 1; flex: 0 0 auto; }
+.quick-cta a small { display: block; font-weight: 500; font-size: 0.84rem; opacity: 0.85; }
+.quick-cta__gold { background: var(--gold); }
+.quick-cta__cyan { background: var(--cyan); color: #fff !important; }
+.quick-cta__sage { background: var(--sage); }
+@media (max-width: 860px) { .quick-cta__inner { grid-template-columns: 1fr; } .quick-cta a { min-height: 60px; } }
+
+/* Stacked, full-width buttons inside event cards */
+.event-card__btns--stack { flex-direction: column; align-items: stretch; }
+.event-card__btns--stack .btn { display: block; text-align: center; font-size: 1rem; padding: 14px 20px; }
+.event-card__btns--stack .event-card__more { text-align: center; }
+.event-card__date--hot { background: var(--ink); color: var(--gold); }
+
+/* Slim save-the-date strip under the event grid */
+.save-strip {
+  display: grid; grid-template-columns: 200px 1fr auto; gap: 28px; align-items: center;
+  background: linear-gradient(120deg, var(--ink) 0%, var(--teal) 100%); color: #fff;
+  border-radius: var(--radius); padding: 22px 30px; margin-top: 34px; box-shadow: var(--card-shadow);
+}
+.save-strip img { width: 100%; height: auto; display: block; }
+.save-strip__kicker { font-family: var(--heading-font); font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.82rem; color: var(--gold); margin: 0 0 4px; }
+.save-strip h3 { color: #fff; margin-bottom: 0.2em; }
+.save-strip p { margin: 0; color: rgba(255,255,255,0.9); }
+.save-strip .btn { white-space: nowrap; }
+@media (max-width: 800px) {
+  .save-strip { grid-template-columns: 1fr; text-align: center; padding: 24px 22px; }
+  .save-strip img { max-width: 240px; margin: 0 auto; }
+  .save-strip .btn { justify-self: center; }
+}
