@@ -136,7 +136,13 @@ img { max-width: 100%; height: auto; }
   max-width: var(--wrap); margin: 0 auto; padding: 12px 22px;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
+.site-brand { display: flex; align-items: center; gap: 14px; }
 .site-logo img { height: 62px; width: auto; display: block; }
+/* School of Excellence seal beside the logo; links to the award section on the homepage */
+.site-seal { display: block; border-radius: 10px; overflow: hidden; transition: transform 0.15s ease; }
+.site-seal img { height: 62px; width: auto; display: block; }
+.site-seal:hover { transform: scale(1.06); }
+@media (max-width: 480px) { .site-logo img { height: 52px; } .site-seal img { height: 50px; } .site-brand { gap: 10px; } }
 
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.7rem; color: var(--ink); cursor: pointer; padding: 4px 10px; line-height: 1; }
 
@@ -581,15 +587,3 @@ a.social-card:hover { transform: translateY(-3px); box-shadow: var(--card-shadow
   .save-strip img { max-width: 240px; margin: 0 auto; }
   .save-strip .btn { justify-self: center; }
 }
-
-/* School of Excellence seal pinned to the hero corner (subtle; links to the award section) */
-.home-hero__seal {
-  position: absolute; top: 22px; right: 22px; z-index: 3; display: block;
-  width: 124px; border-radius: 14px; overflow: hidden;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.35); border: 2px solid rgba(255,255,255,0.7);
-  opacity: 0.92; transition: transform 0.15s ease, opacity 0.15s ease;
-}
-.home-hero__seal img { display: block; width: 100%; height: auto; }
-.home-hero__seal:hover { transform: scale(1.05); opacity: 1; }
-@media (max-width: 900px) { .home-hero__seal { width: 96px; top: 16px; right: 16px; } }
-@media (max-width: 560px) { .home-hero__seal { width: 72px; top: 14px; right: 14px; } .home-hero { padding-top: 92px; } }
