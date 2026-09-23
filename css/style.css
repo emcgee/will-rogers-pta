@@ -581,3 +581,15 @@ a.social-card:hover { transform: translateY(-3px); box-shadow: var(--card-shadow
   .save-strip img { max-width: 240px; margin: 0 auto; }
   .save-strip .btn { justify-self: center; }
 }
+
+/* School of Excellence seal pinned to the hero corner (subtle; links to the award section) */
+.home-hero__seal {
+  position: absolute; top: 22px; right: 22px; z-index: 3; display: block;
+  width: 124px; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35); border: 2px solid rgba(255,255,255,0.7);
+  opacity: 0.92; transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.home-hero__seal img { display: block; width: 100%; height: auto; }
+.home-hero__seal:hover { transform: scale(1.05); opacity: 1; }
+@media (max-width: 900px) { .home-hero__seal { width: 96px; top: 16px; right: 16px; } }
+@media (max-width: 560px) { .home-hero__seal { width: 72px; top: 14px; right: 14px; } .home-hero { padding-top: 92px; } }
