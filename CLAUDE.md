@@ -72,3 +72,13 @@ the other language.
 
 `git push` to `main` = deploy. Nothing else. Live in ~1 minute
 (check the repo's Actions tab for the pages-build-deployment run).
+
+GitHub Pages serves everything with `Cache-Control: max-age=600` and offers no
+header control, so browsers may show a page up to 10 minutes stale. To keep new
+HTML from rendering with a stale stylesheet, every page links
+`css/style.css?v=YYYYMMDD` and `js/site.js?v=YYYYMMDD`. **Whenever you change
+`css/style.css` or `js/site.js`, bump the version on every page:**
+
+```
+sed -i '' -E 's/(style\.css|site\.js)\?v=[0-9]+/\1?v=NEWDATE/' *.html es/*.html
+```
