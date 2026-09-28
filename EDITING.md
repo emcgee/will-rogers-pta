@@ -58,6 +58,16 @@ Upload files** → then link to it from a page (e.g. `files/my-new-form.pdf`).
 - **Yearly updates** live in predictable places: meeting dates in `pta-meetings.html`,
   board members in `contact-us.html`, fundraiser goals in `donate.html`, the
   president's letter in `membership.html`, the copyright year in every footer.
+- **The homepage "Coming up" flyers keep themselves tidy.** Each event in `index.html`
+  (and `es/index.html`) is one `<li class="event">` block with a start and end date,
+  like `data-start="2026-10-09" data-end="2026-10-09"`, and a color,
+  `data-hue="sun"` (or `sky`, `sage`, `night`). Once an event's end date has passed it
+  disappears on its own, the next event becomes the big invitation at the top, and
+  "Today" / "This week" labels appear automatically. So you only need to **add** new
+  events: copy an existing `<li>` block, keep the list in date order, and change the
+  dates, color, words, links, and flyer (put a ~720px-wide flyer in `images/`). Write
+  dates out in full ("Fri, Oct 9"), never "this Friday". The same change goes in the
+  Spanish file.
 - **The calendar page** (`dynamic-calendar.html`) embeds the PTA's Google Calendar.
   To point it at a different calendar, replace the calendar ID inside the `iframe`
   (instructions are in a comment in that file).

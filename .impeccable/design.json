@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T22:23:19+00:00",
+  "title": "Design System: Will Rogers PTA",
+  "extensions": {
+    "colorMeta": {
+      "footer-legal": {
+        "role": "neutral",
+        "displayName": "Footer Legal",
+        "canonical": "oklch(79.0% 0.038 209.1)",
+        "tonalRamp": [
+          "#000e11",
+          "#08292e",
+          "#26454b",
+          "#446469",
+          "#63848a",
+          "#83a5ab",
+          "#a8ccd2",
+          "#d2f6fc"
+        ]
+      },
+      "sage-hover": {
+        "role": "secondary",
+        "displayName": "Sage Hover",
+        "canonical": "oklch(73.4% 0.086 173.3)",
+        "tonalRamp": [
+          "#000f0a",
+          "#012b22",
+          "#014c3c",
+          "#126d59",
+          "#3d8e79",
+          "#60b09a",
+          "#86d7bf",
+          "#beffea"
+        ]
+      },
+      "pacific-cyan": {
+        "role": "primary",
+        "displayName": "Pacific Cyan",
+        "canonical": "oklch(67.7% 0.120 218.9)",
+        "tonalRamp": [
+          "#000e13",
+          "#012933",
+          "#034857",
+          "#04697e",
+          "#058ba8",
+          "#23afd1",
+          "#58d6f8",
+          "#d5f5ff"
+        ]
+      },
+      "pacific-cyan-deep": {
+        "role": "primary",
+        "displayName": "Pacific Cyan (deep)",
+        "canonical": "oklch(59.2% 0.105 219.0)",
+        "tonalRamp": [
+          "#000e13",
+          "#002933",
+          "#014858",
+          "#01697f",
+          "#0c8ba7",
+          "#42aeca",
+          "#6dd4f2",
+          "#d6f5fe"
+        ]
+      },
+      "lifeguard-teal": {
+        "role": "secondary",
+        "displayName": "Lifeguard Teal",
+        "canonical": "oklch(55.1% 0.096 216.9)",
+        "tonalRamp": [
+          "#000e13",
+          "#012932",
+          "#014856",
+          "#01697d",
+          "#248ba2",
+          "#4eadc5",
+          "#76d4ec",
+          "#d5f5fe"
+        ]
+      },
+      "lifeguard-teal-deep": {
+        "role": "secondary",
+        "displayName": "Lifeguard Teal (deep)",
+        "canonical": "oklch(44.9% 0.078 218.4)",
+        "tonalRamp": [
+          "#000e12",
+          "#012933",
+          "#024857",
+          "#19687b",
+          "#40889c",
+          "#63aabf",
+          "#88d1e6",
+          "#d5f5ff"
+        ]
+      },
+      "deep-kelp-ink": {
+        "role": "neutral",
+        "displayName": "Deep Kelp Ink",
+        "canonical": "oklch(31.9% 0.051 215.4)",
+        "tonalRamp": [
+          "#000e12",
+          "#012932",
+          "#1a4751",
+          "#396570",
+          "#598591",
+          "#7aa7b3",
+          "#9fcdd9",
+          "#d3f5fe"
+        ]
+      },
+      "santa-monica-sun": {
+        "role": "primary",
+        "displayName": "Santa Monica Sun",
+        "canonical": "oklch(83.3% 0.159 86.8)",
+        "tonalRamp": [
+          "#110a00",
+          "#2f2200",
+          "#513c01",
+          "#755902",
+          "#9c7706",
+          "#c59700",
+          "#f1bc27",
+          "#ffedc5"
+        ]
+      },
+      "santa-monica-sun-deep": {
+        "role": "primary",
+        "displayName": "Santa Monica Sun (deep)",
+        "canonical": "oklch(76.7% 0.155 83.7)",
+        "tonalRamp": [
+          "#110a00",
+          "#302100",
+          "#523b01",
+          "#785803",
+          "#9f7608",
+          "#c89503",
+          "#f4ba31",
+          "#feecca"
+        ]
+      },
+      "cactus-sage": {
+        "role": "secondary",
+        "displayName": "Cactus Sage",
+        "canonical": "oklch(77.2% 0.081 173.2)",
+        "tonalRamp": [
+          "#000f0a",
+          "#012c22",
+          "#004c3c",
+          "#1d6c59",
+          "#438d79",
+          "#65af9a",
+          "#8bd6bf",
+          "#bdffea"
+        ]
+      },
+      "cactus-sage-deep": {
+        "role": "secondary",
+        "displayName": "Cactus Sage (deep)",
+        "canonical": "oklch(67.5% 0.085 173.2)",
+        "tonalRamp": [
+          "#000f0a",
+          "#012b22",
+          "#004c3c",
+          "#166d59",
+          "#3f8e79",
+          "#62b09a",
+          "#88d6bf",
+          "#beffea"
+        ]
+      },
+      "porch-cream": {
+        "role": "neutral",
+        "displayName": "Porch Cream",
+        "canonical": "oklch(98.1% 0.018 81.3)",
+        "tonalRamp": [
+          "#0f0a04",
+          "#28231a",
+          "#443f35",
+          "#635d53",
+          "#837c72",
+          "#a49e92",
+          "#cac3b8",
+          "#f5eee2"
+        ]
+      },
+      "cyan-wash": {
+        "role": "neutral",
+        "displayName": "Cyan Wash",
+        "canonical": "oklch(95.9% 0.019 213.4)",
+        "tonalRamp": [
+          "#030d10",
+          "#192629",
+          "#354246",
+          "#526164",
+          "#718084",
+          "#92a2a5",
+          "#b7c8cb",
+          "#e1f2f6"
+        ]
+      },
+      "sage-wash": {
+        "role": "neutral",
+        "displayName": "Sage Wash",
+        "canonical": "oklch(95.9% 0.015 171.1)",
+        "tonalRamp": [
+          "#050d0a",
+          "#1d2623",
+          "#38423f",
+          "#55615c",
+          "#75807c",
+          "#96a29d",
+          "#bbc7c3",
+          "#e5f2ed"
+        ]
+      },
+      "sun-wash": {
+        "role": "neutral",
+        "displayName": "Sun Wash",
+        "canonical": "oklch(95.7% 0.045 89.1)",
+        "tonalRamp": [
+          "#100a00",
+          "#2d2306",
+          "#493f23",
+          "#685d40",
+          "#887c5e",
+          "#aa9e7f",
+          "#d0c3a3",
+          "#fbeecd"
+        ]
+      },
+      "surface-white": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "body-text": {
+        "role": "neutral",
+        "displayName": "Body Text",
+        "canonical": "oklch(34.1% 0.034 213.4)",
+        "tonalRamp": [
+          "#000e12",
+          "#0d282e",
+          "#2a454b",
+          "#476369",
+          "#66838a",
+          "#87a4ab",
+          "#accad2",
+          "#d5f5fd"
+        ]
+      },
+      "muted-text": {
+        "role": "neutral",
+        "displayName": "Muted Text",
+        "canonical": "oklch(52.8% 0.035 222.6)",
+        "tonalRamp": [
+          "#000e13",
+          "#0e2830",
+          "#2a444d",
+          "#48626c",
+          "#67828d",
+          "#87a4ae",
+          "#accad5",
+          "#d8f4ff"
+        ]
+      },
+      "footer-text": {
+        "role": "neutral",
+        "displayName": "Footer Text",
+        "canonical": "oklch(90.9% 0.025 209.3)",
+        "tonalRamp": [
+          "#000e11",
+          "#15272b",
+          "#304447",
+          "#4e6265",
+          "#6d8285",
+          "#8da3a7",
+          "#b2c9cd",
+          "#dcf4f8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (Poppins 800)",
+        "purpose": "Hero and page-hero h1s, the invitation's event title, date-sticker day numbers, the $11 figure."
+      },
+      "headline": {
+        "displayName": "Headline (Fredoka 700)",
+        "purpose": "Section h2s, usually followed by the gold underline bar."
+      },
+      "title": {
+        "displayName": "Title (Fredoka 700)",
+        "purpose": "Card, event, and callout h3s."
+      },
+      "body": {
+        "displayName": "Body (Nunito Sans 400)",
+        "purpose": "All reading text; 17px at 1.7 leading."
+      },
+      "label": {
+        "displayName": "Label / Eyebrow (Fredoka 600, uppercase)",
+        "purpose": "Footer column heads, date-tile months, status pills, legacy eyebrows."
+      },
+      "button": {
+        "displayName": "Button (Fredoka 600)",
+        "purpose": "Every button, nav link, chip, and link-hub row."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 16px 38px rgba(9, 57, 67, 0.12)",
+        "purpose": "Resting shadow for every white surface on the cream porch."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 24px 50px rgba(9, 57, 67, 0.22)",
+        "purpose": "Hover state for actionable cards and rows."
+      },
+      {
+        "name": "sun-glow",
+        "value": "0 10px 22px rgba(245, 192, 46, 0.36)",
+        "purpose": "Under gold buttons; hover 0 16px 30px at 0.5."
+      },
+      {
+        "name": "teal-glow",
+        "value": "0 10px 22px rgba(14, 127, 150, 0.32)",
+        "purpose": "Under teal buttons; hover 0 16px 30px at 0.45."
+      },
+      {
+        "name": "pinned-print",
+        "value": "0 14px 30px rgba(9, 57, 67, 0.20), 0 2px 6px rgba(9, 57, 67, 0.10)",
+        "purpose": "Under every event flyer print; plain black on the night mat."
+      },
+      {
+        "name": "sage-glow",
+        "value": "0 10px 22px rgba(124, 198, 176, 0.4)",
+        "purpose": "Under sage buttons."
+      },
+      {
+        "name": "donate-nav-glow",
+        "value": "0 6px 16px rgba(245, 192, 46, 0.4)",
+        "purpose": "The Donate pill in the header nav."
+      },
+      {
+        "name": "hero-text-lift",
+        "value": "0 3px 24px rgba(0, 0, 0, 0.55)",
+        "purpose": "text-shadow on hero h1 over photography."
+      }
+    ],
+    "motion": [
+      {
+        "name": "hover-standard",
+        "value": "0.15s ease",
+        "purpose": "Buttons, nav, toggles, quick-CTA tiles: transform, shadow, background."
+      },
+      {
+        "name": "flyer-straighten",
+        "value": "rotate(0) scale(1.015), 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Hovering a tilted flyer print straightens and lifts it."
+      },
+      {
+        "name": "lift-button",
+        "value": "translateY(-3px)",
+        "purpose": "Button hover rise."
+      },
+      {
+        "name": "lift-whole-card-link",
+        "value": "translateY(-3px)",
+        "purpose": "Social cards and other whole-card links."
+      },
+      {
+        "name": "lift-row",
+        "value": "translateY(-2px)",
+        "purpose": "Link-hub row hover rise."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-collapse",
+        "value": "1080px"
+      },
+      {
+        "name": "place-stack",
+        "value": "860px"
+      },
+      {
+        "name": "cards-3-to-2",
+        "value": "900px"
+      },
+      {
+        "name": "columns-stack",
+        "value": "820px"
+      },
+      {
+        "name": "award-stack",
+        "value": "720px"
+      },
+      {
+        "name": "flyer-strip",
+        "value": "700px"
+      },
+      {
+        "name": "cards-1-col",
+        "value": "600px"
+      },
+      {
+        "name": "hero-compact",
+        "value": "560px"
+      },
+      {
+        "name": "header-compact",
+        "value": "480px"
+      },
+      {
+        "name": "seal-hidden",
+        "value": "370px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (Sun)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action in any view: Join, Donate, Register.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Join the PTA</a>",
+      "css": ".ds-btn-primary { display: inline-block; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 14px 32px; border-radius: 999px; border: 3px solid transparent; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; background: var(--gold, #f5c02e); color: var(--ink, #093943); box-shadow: 0 10px 22px rgba(245,192,46,0.36); } .ds-btn-primary:hover { background: var(--gold-600, #e2a90f); transform: translateY(-3px); box-shadow: 0 16px 30px rgba(245,192,46,0.5); } .ds-btn-primary:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(-1px); }"
+    },
+    {
+      "name": "Teal Button",
+      "kind": "button",
+      "refersTo": "button-teal",
+      "description": "Secondary filled action. White on Lifeguard Teal (4.7:1); cyan never carries text.",
+      "html": "<a class=\"ds-btn-teal\" href=\"#\">Register</a>",
+      "css": ".ds-btn-teal { display: inline-block; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 14px 32px; border-radius: 999px; border: 3px solid transparent; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; background: var(--teal, #0e7f96); color: #fff; box-shadow: 0 10px 22px rgba(14,127,150,0.32); } .ds-btn-teal:hover { background: var(--teal-700, #0a5f72); transform: translateY(-3px); box-shadow: 0 16px 30px rgba(14,127,150,0.45); } .ds-btn-teal:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "The secondary action beside a gold one: white pill, teal rim, no glow.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">Ways to volunteer</a>",
+      "css": ".ds-btn-quiet { display: inline-block; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 14px 32px; border-radius: 999px; border: 3px solid transparent; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; background: #fff; color: var(--ink, #093943); border: 2px solid var(--teal, #0e7f96); padding: 12px 26px; } .ds-btn-quiet:hover { background: var(--cyan-050, #e4f5f9); border-color: var(--teal-700, #0a5f72); transform: translateY(-3px); box-shadow: 0 10px 22px rgba(9,57,67,0.12); } .ds-btn-quiet:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Sage Button",
+      "kind": "button",
+      "refersTo": "button-sage",
+      "description": "Third-tier action in a trio of choices.",
+      "html": "<a class=\"ds-btn-sage\" href=\"#\">Donate</a>",
+      "css": ".ds-btn-sage { display: inline-block; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 14px 32px; border-radius: 999px; border: 3px solid transparent; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; background: var(--sage, #7cc6b0); color: var(--ink, #093943); box-shadow: 0 10px 22px rgba(124,198,176,0.4); } .ds-btn-sage:hover { background: var(--sage-600, #5aa892); transform: translateY(-3px); } .ds-btn-sage:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "White outline pill for photo and gradient backgrounds only.",
+      "html": "<div class=\"ds-dark-stage\"><a class=\"ds-btn-outline\" href=\"#\">Donate</a></div>",
+      "css": ".ds-dark-stage { background: linear-gradient(135deg, var(--cyan, #12a8c9), var(--teal, #0e7f96)); padding: 28px; border-radius: 22px; display: inline-block; } .ds-btn-outline { display: inline-block; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 1rem; text-decoration: none; padding: 14px 32px; border-radius: 999px; border: 3px solid transparent; cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; background: transparent; color: #fff; border-color: rgba(255,255,255,0.85); } .ds-btn-outline:hover { background: #fff; color: var(--ink, #093943); border-color: #fff; transform: translateY(-3px); } .ds-btn-outline:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Pill nav links with a gold active bar, the gold Donate pill last, and the language toggle.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-link ds-active\">Home</a><a href=\"#\" class=\"ds-nav-link\">Calendar &#9662;</a><a href=\"#\" class=\"ds-nav-link\">Join PTA</a><a href=\"#\" class=\"ds-nav-donate\">Donate</a><a href=\"#\" class=\"ds-lang\">&#127760; Espa&ntilde;ol</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; background: rgba(255,248,236,0.94); padding: 12px; border-top: 6px solid transparent; border-image: linear-gradient(90deg, #12a8c9 0%, #7cc6b0 33%, #f5c02e 66%, #0e7f96 100%) 1; } .ds-nav-link { display: block; padding: 9px 12px; color: var(--ink, #093943); text-decoration: none; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 500; font-size: 0.95rem; border-radius: 999px; white-space: nowrap; transition: background 0.15s ease, color 0.15s ease; } .ds-nav-link:hover { background: var(--cyan-050, #e4f5f9); color: var(--link, #0a5f72); } .ds-nav-link.ds-active { color: var(--link, #0a5f72); } .ds-nav-link.ds-active::after { content: \"\"; display: block; height: 3px; border-radius: 3px; background: var(--gold, #f5c02e); margin: 3px 12px 0; } .ds-nav-donate { display: block; background: var(--gold, #f5c02e); color: var(--ink, #093943); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.95rem; padding: 9px 22px; margin-left: 6px; border-radius: 999px; text-decoration: none; box-shadow: 0 6px 16px rgba(245,192,46,0.4); transition: background 0.15s ease; } .ds-nav-donate:hover { background: var(--gold-600, #e2a90f); } .ds-lang { display: inline-flex; align-items: center; gap: 6px; font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.9rem; padding: 8px 16px; border-radius: 999px; text-decoration: none; color: var(--link, #0a5f72); border: 2px solid var(--cyan, #12a8c9); background: #fff; margin-left: 6px; transition: background 0.15s ease, color 0.15s ease; } .ds-lang:hover { background: var(--teal, #0e7f96); border-color: var(--teal, #0e7f96); color: #fff; } .ds-nav a:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card with a rotating 6px accent top edge, tilted emoji tile, muted copy and a trailing pill.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-icon\">&#x1F64C;</div><h3>Join PTA</h3><p>Membership is $11, and every member can vote at our monthly association meetings.</p><a class=\"ds-card-btn\" href=\"#\">+ Sign Up</a></div>",
+      "css": ".ds-card { max-width: 340px; background: #fff; border-radius: 22px; padding: 34px 28px 30px; box-shadow: var(--card-shadow, 0 16px 38px rgba(9,57,67,0.12)); border-top: 6px solid var(--cyan, #12a8c9); display: flex; flex-direction: column; } .ds-card-icon { width: 62px; height: 62px; border-radius: 18px; display: grid; place-items: center; font-size: 1.9rem; line-height: 1; margin-bottom: 16px; background: var(--cyan-050, #e4f5f9); transform: rotate(-4deg); } .ds-card h3 { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 700; font-size: 1.45rem; line-height: 1.12; color: var(--ink, #093943); margin: 0 0 0.5em; } .ds-card p { font-family: var(--body-font, \"Nunito Sans\", system-ui, sans-serif); font-size: 17px; line-height: 1.7; color: var(--muted, #55707a); margin: 0 0 1em; } .ds-card-btn { align-self: flex-start; background: var(--gold, #f5c02e); color: var(--ink, #093943); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; text-decoration: none; padding: 14px 32px; border-radius: 999px; box-shadow: 0 10px 22px rgba(245,192,46,0.36); } .ds-card-btn:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Flyer wall: poster",
+      "kind": "custom",
+      "refersTo": "flyer-mat",
+      "description": "An upcoming event: the real flyer as a tilted white-bordered print on a mat in the event's hue, a round date sticker on the corner, then title, when-line and actions.",
+      "html": "<article class=\"ds-poster\"><a class=\"ds-mat\" href=\"#\" tabindex=\"-1\" aria-hidden=\"true\"><span class=\"ds-print\"><span class=\"ds-flyer\">READ-A-THON<br><small>Sept 14 &ndash; Oct 2</small></span></span><span class=\"ds-sticker\"><span>Oct</span><b>2</b></span></a><span class=\"ds-status\">Last days</span><h3>Read-A-Thon</h3><p class=\"ds-when\">Now through Fri, Oct 2</p><a class=\"ds-quiet\" href=\"#\">Register &amp; donate</a> <a class=\"ds-arrow\" href=\"#\">Prizes &amp; details</a></article>",
+      "css": ".ds-poster { width: 300px; font-family: var(--body-font, \"Nunito Sans\", system-ui, sans-serif); } .ds-mat { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 5; background: var(--cyan-050, #e4f5f9); border-radius: 22px; margin-bottom: 20px; } .ds-print { display: block; background: #fff; padding: 8px; border-radius: 6px; transform: rotate(-2.5deg); box-shadow: 0 14px 30px rgba(9,57,67,0.20), 0 2px 6px rgba(9,57,67,0.10); transition: transform 0.45s cubic-bezier(0.22,1,0.36,1); } .ds-mat:hover .ds-print { transform: rotate(0) scale(1.015); } .ds-flyer { display: grid; place-content: center; width: 170px; height: 230px; background: linear-gradient(160deg, #12a8c9, #0e7f96); color: #fff; text-align: center; font-family: var(--display-font, \"Poppins\", \"Fredoka\", system-ui, sans-serif); font-weight: 800; font-size: 1.3rem; border-radius: 2px; } .ds-flyer small { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.8rem; } .ds-sticker { position: absolute; top: 14px; right: 14px; width: 78px; height: 78px; border-radius: 50%; display: grid; place-content: center; text-align: center; line-height: 1; background: var(--teal, #0e7f96); color: #fff; border: 3px solid #fff; transform: rotate(9deg); box-shadow: 0 8px 18px rgba(9,57,67,0.22); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); } .ds-sticker span { font-weight: 600; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; } .ds-sticker b { font-family: var(--display-font, \"Poppins\", \"Fredoka\", system-ui, sans-serif); font-weight: 800; font-size: 1.9rem; } .ds-status { display: inline-block; background: var(--ink, #093943); color: var(--gold, #f5c02e); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; border-radius: 999px; padding: 4px 12px; margin-bottom: 10px; } .ds-poster h3 { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 700; font-size: 1.4rem; color: var(--ink, #093943); margin: 0 0 0.25em; } .ds-when { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; color: var(--ink, #093943); margin: 0 0 0.8em; } .ds-quiet { display: inline-block; background: #fff; color: var(--ink, #093943); border: 2px solid var(--teal, #0e7f96); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.95rem; text-decoration: none; padding: 9px 20px; border-radius: 999px; margin-right: 14px; } .ds-quiet:hover { background: var(--cyan-050, #e4f5f9); } .ds-arrow { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; color: var(--link, #0a5f72); text-decoration: none; } .ds-arrow::after { content: \"\\00a0\\2192\"; } .ds-poster a:focus-visible { outline: 3px solid var(--ink, #093943); outline-offset: 3px; }"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Informational white pill with a leading emoji; not interactive.",
+      "html": "<span class=\"ds-chip\"><span class=\"ds-chip-emoji\">&#x1F5F3;&#xFE0F;</span>Vote at meetings</span>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 9px; background: #fff; border-radius: 999px; padding: 11px 20px; box-shadow: var(--card-shadow, 0 16px 38px rgba(9,57,67,0.12)); font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; color: var(--ink, #093943); font-size: 1rem; } .ds-chip-emoji { font-size: 1.3rem; line-height: 1; }"
+    },
+    {
+      "name": "Callout",
+      "kind": "card",
+      "refersTo": "callout",
+      "description": "'Good to know' block with a 7px sun left edge; does not lift.",
+      "html": "<div class=\"ds-callout\"><h3>Can't make it in person?</h3><p>A virtual option is available for every PTA meeting. Agendas are posted in advance.</p></div>",
+      "css": ".ds-callout { max-width: 560px; background: #fff; border-radius: 22px; padding: 28px 30px; box-shadow: var(--card-shadow, 0 16px 38px rgba(9,57,67,0.12)); border-left: 7px solid var(--gold, #f5c02e); } .ds-callout h3 { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 700; font-size: 1.45rem; line-height: 1.12; color: var(--ink, #093943); margin: 0 0 0.35em; } .ds-callout p { font-family: var(--body-font, \"Nunito Sans\", system-ui, sans-serif); color: var(--text, #223d43); line-height: 1.7; margin: 0; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "description": "Fredoka headline closed by the 64x5 gold underline bar; no eyebrow label.",
+      "html": "<div class=\"ds-heading\"><h2>Coming up at Will Rogers</h2></div>",
+      "css": ".ds-heading { text-align: center; background: var(--cream, #fff8ec); padding: 24px; } .ds-eyebrow { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 600; font-size: 0.9rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--link, #0a5f72); margin: 0 0 0.5em; } .ds-heading h2 { font-family: var(--heading-font, \"Fredoka\", \"Poppins\", system-ui, sans-serif); font-weight: 700; font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.12; color: var(--ink, #093943); margin: 0; } .ds-heading h2::after { content: \"\"; display: block; width: 64px; height: 5px; border-radius: 5px; background: var(--gold, #f5c02e); margin: 14px auto 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Front-Porch Invitation",
+    "overview": "The site should feel like a neighbor on a sunny porch waving you in. The base is warm Porch Cream, never white or gray, and everything on it is painted in the logo's colors: Pacific Cyan and Lifeguard Teal from the wordmark, Santa Monica Sun from the sun, Cactus Sage from the hills. Color is generous but not random. It marks what you can do (sun-gold buttons), where one section ends and the next begins (tinted bands and gradient heroes), and which card is which (rotating accent edges). Most of the feeling comes from the people. Real Will Rogers photography rotates through the homepage hero, and the copy is warm and exclamatory. The homepage leads with what's coming up, and it invites rather than lists: the real event flyers are the art, printed and pinned, and the next event opens as an invitation in its own color. A parent arriving from the Wednesday newsletter sees that invitation, its date and its button in the first phone screen.\n\nEvery clickable thing is round, tappable and a little buoyant. Buttons are full pills, cards have soft 22px corners and rest on a teal-tinted shadow, and a button or whole-card link lifts a few pixels when you hover it. Headings are set in Fredoka, which is rounded and friendly without being childish. The biggest titles switch to heavy Poppins so they read as confident rather than bubbly. Body copy is Nunito Sans at a comfortable 17px with airy 1.7 leading, sized for a parent reading on a phone in the pickup line.\n\nThe system rejects three things: the **generic Wix template** (stock photos, placeholder blocks, could-be-any-PTA sameness), the **district or institutional** look (gray, bureaucratic notice boards), and **childish clip-art** (crayon fonts, cartoon mascots, rainbow overload). Joyful, but made for grown-ups.",
+    "keyCharacteristics": [
+      "Warm cream canvas with logo-derived color used to signal actions and sections.",
+      "Pill-shaped actions; soft 22px cards; single-target links and buttons lift.",
+      "A 6px four-color stripe (cyan → sage → sun → teal) caps both the header and the footer.",
+      "Flyers as the art: every event shows its real flyer as a white-bordered print, tilted a couple of degrees, with a round date sticker slapped on the corner.",
+      "Real campus photography under a dark-teal spotlight scrim; flat teal-to-deep-teal gradient bands for interior page heroes.",
+      "Bilingual at parity: every layout carries Spanish strings as comfortably as English."
+    ],
+    "rules": [
+      {
+        "name": "The Sun Is the Button Rule",
+        "body": "Santa Monica Sun means \"do this.\" The most important action in any view is a gold pill with Deep Kelp Ink text. Cyan and sage buttons are the second and third choices, never the main one.",
+        "section": "colors"
+      },
+      {
+        "name": "The Logo-Only Palette Rule",
+        "body": "Every hue comes from the logo. The only exceptions are the social brand accents on the link hub and footer (Instagram, Facebook, WhatsApp, X). Don't add new hues to decorate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Contrast Floor Rule",
+        "body": "White text only on Lifeguard Teal or darker (4.7:1 and up); on Pacific Cyan it is 2.8:1, so cyan never carries text. Text on Sun or Sage fills is always Deep Kelp Ink (7.4:1 and 6.3:1). Small colored text on cream or white is `lifeguard-teal-deep`. Gold text only on Deep Kelp Ink or gradients that end at `#0a4f5e` or darker. A gradient behind text is judged at its lightest stop.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three-Voice Rule",
+        "body": "Poppins shouts (hero titles and big numbers only), Fredoka talks (headings, buttons, nav, labels: anything you scan or tap), and Nunito Sans explains (paragraphs). Never set a paragraph in Fredoka or a button in Nunito Sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Heading-Speaks Rule",
+        "body": "A heading carries its own weight. Don't add new uppercase eyebrow labels above headings; the homepage has none. Voice that used to live in a kicker (\"Huzzah!\") goes into the heading itself. Existing interior-page eyebrows stay until those pages are revisited: `lifeguard-teal-deep` on light, white on page heroes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tinted Shadow Rule",
+        "body": "Shadows are never neutral gray or black. Surfaces cast Deep Kelp Ink at 10–22% opacity, and colored buttons glow in their own fill color.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tap-Lift Rule",
+        "body": "Only an element that *is* a single link or button lifts on hover: buttons rise 3px, whole-card links (social cards, link-hub rows) rise 2–3px, over 0.15s `ease`. A card that merely *contains* links (grid cards, the invitation, callouts, meeting items) keeps its resting shadow and stays still. The one exception is the flyer print: hovering it straightens the tilt and lifts it slightly (0.45s ease-out), because the flyer is itself a link. A lift is a promise that clicking anywhere on it does something. Under `prefers-reduced-motion`, nothing moves.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** make the single most important action a Santa Monica Sun pill with Deep Kelp Ink text (the Sun Is the Button Rule).",
+      "**Do** keep the page background Porch Cream and put white cards on it. The cream-to-white step is part of the porch feel.",
+      "**Do** tint every shadow with Deep Kelp Ink (`rgba(9, 57, 67, …)`) and give colored buttons a glow in their own hue.",
+      "**Do** step corner radius down when nesting: 22px card → 14px inner image or panel → pill for controls.",
+      "**Do** use real Will Rogers photography (`images/heroes/`, event flyers) wherever an image is needed.",
+      "**Do** close section headings with the 64×5px gold underline bar, and let the heading speak without an eyebrow label (the Heading-Speaks Rule).",
+      "**Do** let the real flyers be the art for events, as tilted prints on a mat in the event's hue, never cropped.",
+      "**Do** lead with dates: anything time-bound gets a date sticker plus a full written date (\"Wed, Sept 30\"), never only a relative one (\"this Wednesday\").",
+      "**Do** keep one gold pill per band; use quiet pills and arrow links for everything else.",
+      "**Do** let every button, pill and nav item wrap or grow for Spanish strings, which often run longer than the English.",
+      "**Do** keep white text on Lifeguard Teal or darker, and Deep Kelp Ink text on Sun and Sage (the Contrast Floor Rule)."
+    ],
+    "donts": [
+      "**Don't** make it look like a **generic Wix template**: no stock photography, no placeholder \"Lorem\" blocks, no layouts that could belong to any PTA anywhere.",
+      "**Don't** drift into the **district or institutional** look: no gray page backgrounds, no neutral gray shadows, no dense bordered tables of notices, no square-cornered boxes.",
+      "**Don't** tip into **childish clip-art**: no crayon or handwriting fonts, cartoon mascots, clip-art illustrations or rainbow-everything. The four-color stripe is the only place all the accents appear together.",
+      "**Don't** add hues outside the logo palette for decoration (the Logo-Only Palette Rule).",
+      "**Don't** set paragraphs in Fredoka or Poppins, or buttons and nav in Nunito Sans (the Three-Voice Rule).",
+      "**Don't** make informational blocks lift on hover. Lift means \"clickable\" (the Tap-Lift Rule).",
+      "**Don't** put any text on Pacific Cyan; it is a graphic color only.",
+      "**Don't** add new rows of same-size emoji-tile cards. The existing card grids on interior pages are legacy, not a pattern to extend."
+    ]
+  }
+}

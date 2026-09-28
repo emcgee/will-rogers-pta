@@ -25,38 +25,42 @@
   <meta name="twitter:image" content="https://www.willrogerspta.com/images/heroes/holi1.png">
   <!-- /seo -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"NGO","name":"Will Rogers PTA","alternateName":"Will Rogers Learning Community PTA","url":"https://www.willrogerspta.com/es/","logo":"https://www.willrogerspta.com/images/pta-logo.jpg","image":"https://www.willrogerspta.com/images/heroes/holi1.png","description":"La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.","email":"communications@willrogerspta.com","telephone":"","taxID":"23-7017326","address":{"@type":"PostalAddress","streetAddress":"2401 14th Street","addressLocality":"Santa Monica","addressRegion":"CA","postalCode":"90405","addressCountry":"US"},"sameAs":["https://www.facebook.com/willrogerslc","https://instagram.com/willrogersnews","https://twitter.com/willrogersstem"]}
+  {"@context":"https://schema.org","@type":"NGO","name":"Will Rogers PTA","alternateName":"Will Rogers Learning Community PTA","url":"https://www.willrogerspta.com/es/","logo":"https://www.willrogerspta.com/images/pta-logo.jpg","image":"https://www.willrogerspta.com/images/heroes/holi1.png","description":"La PTA de Will Rogers es una National PTA School of Excellence 2025–2027 y recibió el Phoebe Apperson Hearst Award of Merit; apoya a estudiantes y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.","email":"communications@willrogerspta.com","telephone":"","taxID":"23-7017326","address":{"@type":"PostalAddress","streetAddress":"2401 14th Street","addressLocality":"Santa Monica","addressRegion":"CA","postalCode":"90405","addressCountry":"US"},"sameAs":["https://www.facebook.com/willrogerslc","https://instagram.com/willrogersnews","https://x.com/willrogersstem"]}
   </script>
-  <link rel="icon" href="../images/pta-logo.jpg">
+  <link rel="icon" href="../images/favicon-64.png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../images/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=2026092701">
-  <script src="../js/site.js?v=2026092701" defer></script>
+  <link rel="stylesheet" href="../css/style.css?v=2026092802">
+  <script src="../js/site.js?v=2026092802" defer></script>
   <script>
   /* Pick a random Will Rogers hero photo on each page load (set before paint = no flash).
      Add or remove filenames here to change the rotation; files live in images/heroes/. */
+  document.documentElement.className += " js";
   (function () {
-    var heroes = ["RogersAssembly.png", "WRLC-ribbon-cutting2025.png", "earth-day25.png", "farm-stand.png", "holi1.png", "rogers-boys.png", "school-of-excellence-2025.jpg"];
+    var heroes = ["RogersAssembly.webp", "WRLC-ribbon-cutting2025.webp", "earth-day25.png", "farm-stand.webp", "holi1.webp", "rogers-boys.webp", "school-of-excellence-2025.webp"];
     var pick = heroes[Math.floor(Math.random() * heroes.length)];
     document.documentElement.style.setProperty("--hero-img", 'url("/images/heroes/' + pick + '")');
   })();
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
 
 <!-- ===== Site header (Spanish — keep in sync with the English pages and es/ pages) ===== -->
 <header class="site-header">
   <div class="header-inner">
-    <a class="site-logo" href="/es/"><img src="../images/pta-logo.jpg" alt="Logotipo de Will Rogers PTA"></a>
-    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-    <nav class="site-nav">
+    <a class="site-logo" href="/es/"><img src="../images/pta-logo-header.webp" width="413" height="124" alt="Will Rogers PTA, inicio"></a>
+    <a class="header-lang" href="/" lang="en" hreflang="en">English</a>
+    <button class="nav-toggle" aria-label="Menú" aria-expanded="false" aria-controls="site-nav"><svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
       <ul>
         <li><a href="/es/" class="active">Inicio</a></li>
         <li class="dropdown"><a href="dynamic-calendar">Calendario</a>
           <ul class="dropdown-menu">
             <li><a href="pta-meetings">Información y Reuniones</a></li>
-            <li><a href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Calendario del Año</a></li>
+            <li><a href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Calendario del Año<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
             <li><a href="dynamic-calendar">Calendario</a></li>
           </ul>
         </li>
@@ -80,182 +84,191 @@
         </li>
         <li><a href="contact-us">Contáctanos</a></li>
         <li class="donate-link"><a href="donate">Donar</a></li>
-        <li><a class="lang-toggle" href="/" lang="en" hreflang="en">English</a></li>
+        <li class="lang-item"><a class="lang-toggle" href="/" lang="en" hreflang="en">English</a></li>
       </ul>
     </nav>
-    <a class="site-seal" href="/es/#excellence" title="National PTA School of Excellence, 2025-2027"><img src="../images/pta-school-of-excellence-2025-2027.png" alt="Orgullosos de ser una National PTA School of Excellence, 2025-2027"></a>
+    <a class="site-seal" href="/es/#excellence" title="National PTA School of Excellence, 2025-2027"><img src="../images/pta-school-of-excellence-2025-2027-124.webp" width="62" height="62" alt="Orgullosos de ser una National PTA School of Excellence, 2025-2027"></a>
   </div>
 </header>
 
+<main id="main">
+
 <section class="home-hero">
   <div class="home-hero__inner">
-    <p class="eyebrow">Santa Mónica &middot; Bachillerato Internacional</p>
-    <h1>Will Rogers PTA</h1>
+    <h1>Te damos la bienvenida a la PTA de Will Rogers</h1>
     <p class="home-hero__sub">Padres, maestros y vecinos trabajando juntos por cada niño y niña de Will Rogers Learning Community.</p>
     <div class="home-hero__cta">
-      <a class="btn" href="membership">Únete a la PTA</a>
+      <a class="btn btn-outline" href="membership">Únete a la PTA</a>
       <a class="btn btn-outline" href="donate">Donar</a>
     </div>
   </div>
   <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C240,72 480,72 720,44 C960,16 1200,16 1440,40 L1440,70 L0,70 Z"></path></svg></div>
 </section>
 
-<section class="quick-cta" aria-label="Enlaces rápidos a próximos eventos">
-  <div class="quick-cta__inner">
-    <a class="quick-cta__pink" href="events-fundraisers#books-cookies"><span class="emoji" aria-hidden="true">&#x1F36A;</span><span>Noche de Libros y Galletas <small>Este mié. 30 de sept. &middot; 5:30 p. m. &middot; ¡Ven en pijama!</small></span></a>
-    <a class="quick-cta__cyan" href="https://willrogerspta.rallyup.com/462ac4" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">&#x1F4DA;</span><span>Read-A-Thon: Inscríbete y Dona <small>Hasta el 2 de oct. &middot; cada página cuenta</small></span></a>
-    <a class="quick-cta__sage" href="reflections-art-program"><span class="emoji" aria-hidden="true">&#x1F3A8;</span><span>Noche de Arte Reflections <small>Vie. 9 de oct. &middot; 5:30 p. m. &middot; Cafetorium</small></span></a>
-    <a class="quick-cta__gold" href="auction"><span class="emoji" aria-hidden="true">&#x1F37E;</span><span>Noche de Adultos y Subasta <small>Subasta 6&ndash;14 de nov. &middot; Fiesta sáb. 14 de nov.</small></span></a>
+<!-- ===== Próximamente =====
+     Un <li class="event"> por evento, en orden de fecha. data-start / data-end van en formato
+     AAAA-MM-DD (la misma fecha si es una sola noche). data-hue elige el color del evento:
+     sun, sky, sage o night. Los eventos pasados se ocultan solos, el más próximo se convierte
+     automáticamente en la invitación grande y las etiquetas "Hoy" / "Esta semana" aparecen solas.
+     Para agregar un evento, copia un bloque <li> y cambia fechas, textos, enlaces y volante. -->
+<section class="whats-on" aria-label="Próximos eventos">
+  <div class="container">
+    <h2 class="visually-hidden">Lo que sigue</h2>
+    <ul class="events__lead"></ul>
+    <h2 class="events__also section-heading" hidden>También se viene</h2>
+    <ol class="events">
+
+      <li class="event is-next" data-hue="sun" data-start="2026-09-30" data-end="2026-09-30">
+        <a class="event__art" href="events-fundraisers#books-cookies" tabindex="-1" aria-hidden="true">
+          <span class="event__flyer"><img src="../images/books-and-cookies-2026-720.webp" width="720" height="932" alt=""></span>
+          <span class="event__sticker"><span class="m">Sep</span><span class="d">30</span></span>
+        </a>
+        <div class="event__text">
+          <div class="event__head">
+            <p class="event__status" hidden></p>
+            <h3><span class="event__invite">Te invitamos a la</span> Noche de Libros y Galletas</h3>
+            <p class="event__when">Mié. 30 de sept. &middot; 5:30&nbsp;p.&nbsp;m. &middot; Auditorio</p>
+          </div>
+          <div class="event__body">
+            <p class="event__desc">¡Ven en pijama! Lee con tus maestros favoritos y tus amigos, con galletas y libros para todos. Una noche acogedora para toda la familia.</p>
+            <div class="event__actions">
+              <a class="btn event__cta" href="events-fundraisers#books-cookies">Detalles del evento</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="event" data-hue="sky" data-start="2026-09-14" data-end="2026-10-02">
+        <a class="event__art" href="https://willrogerspta.rallyup.com/462ac4" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <span class="event__flyer"><img src="../images/readathon-2026-720.webp" width="720" height="1080" loading="lazy" alt=""></span>
+          <span class="event__sticker"><span class="m">Oct</span><span class="d">2</span></span>
+        </a>
+        <div class="event__text">
+          <div class="event__head">
+            <p class="event__status" hidden></p>
+            <h3><span class="event__invite">Te invitamos al</span> Read-A-Thon</h3>
+            <p class="event__when">Hasta el vie. 2 de oct.</p>
+          </div>
+          <div class="event__body">
+            <p class="event__desc">¡Lee más, haz más, un mañana más brillante! Inscribe a tu lector, registra minutos y reúne donativos. Cada página leída y cada donación apoya los programas de la PTA, con premios para lectores, recaudadores y salones enteros.</p>
+            <div class="event__actions">
+              <a class="btn event__cta" href="https://willrogerspta.rallyup.com/462ac4" target="_blank" rel="noopener">Inscríbete y dona<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+              <a class="arrow-link" href="readathon">Premios y detalles</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="event" data-hue="sage" data-start="2026-10-09" data-end="2026-10-09">
+        <a class="event__art" href="reflections-art-program" tabindex="-1" aria-hidden="true">
+          <span class="event__flyer"><img src="../images/reflections-2026-720.webp" width="720" height="1008" loading="lazy" alt=""></span>
+          <span class="event__sticker"><span class="m">Oct</span><span class="d">9</span></span>
+        </a>
+        <div class="event__text">
+          <div class="event__head">
+            <p class="event__status" hidden></p>
+            <h3><span class="event__invite">Te invitamos a la</span> Noche de Arte Reflections</h3>
+            <p class="event__when">Vie. 9 de oct. &middot; 5:30&nbsp;p.&nbsp;m. &middot; Cafetorium</p>
+          </div>
+          <div class="event__body">
+            <p class="event__desc">¡Haz arte, conecta y gana premios! Reflections es el programa de arte estudiantil de la PTA Nacional. Crea una obra sobre el tema de este año, «Lo que mi cultura significa para mí», con la ayuda de voluntarios expertos, y participa por una tarjeta de regalo de $25 de Blick. Las obras se entregan hasta el 16 de octubre.</p>
+            <div class="event__actions">
+              <a class="btn event__cta" href="reflections-art-program">Noche de Arte y cómo participar</a>
+              <a class="arrow-link" href="reflections-info">Pautas por categoría</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="event" data-hue="night" data-start="2026-11-06" data-end="2026-11-14">
+        <a class="event__art" href="auction" tabindex="-1" aria-hidden="true">
+          <span class="event__flyer"><img src="../images/grown-ups-night-out-720.webp" width="720" height="384" loading="lazy" alt=""></span>
+          <span class="event__sticker"><span class="m">Nov</span><span class="d">14</span></span>
+        </a>
+        <div class="event__text">
+          <div class="event__head">
+            <p class="event__status" hidden></p>
+            <h3><span class="event__invite">Te invitamos a la</span> Noche de Adultos y Subasta</h3>
+            <p class="event__when">Subasta del 6 al 14 de nov. &middot; Fiesta el sáb. 14 de nov.</p>
+          </div>
+          <div class="event__body">
+            <p class="event__desc">¡La fiesta más grande del año! Puja toda la semana por cenas, viajes, experiencias y tesoros únicos de negocios locales y familias de Will Rogers, y luego celebremos juntos en la fiesta. ¿Tienes algo para donar? ¡Nos encantaría!</p>
+            <div class="event__actions">
+              <a class="btn event__cta" href="auction">Detalles de la subasta y la fiesta</a>
+              <a class="arrow-link" href="../files/auction-donation-form.pdf" target="_blank">Dona un artículo para la subasta (PDF)<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ol>
+    <p class="events__empty" hidden>Por ahora eso es todo en el calendario. Las nuevas fechas llegan en el boletín de los miércoles y en el <a href="dynamic-calendar">calendario completo</a>.</p>
+    <div class="events__more">
+      <a class="arrow-link" href="dynamic-calendar">Calendario completo</a>
+      <a class="arrow-link" href="links">Todas las inscripciones del boletín de los miércoles</a>
+    </div>
   </div>
 </section>
 
-<section class="section upcoming">
+<section class="place" aria-labelledby="place-heading">
   <div class="container">
-    <p class="eyebrow">Marca tu calendario</p>
-    <h2 class="section-heading center">Próximamente en Will Rogers</h2>
-    <div class="event-grid">
-      <article class="event-card">
-        <a class="event-card__media" href="events-fundraisers#books-cookies"><img src="../images/books-and-cookies-2026.jpg" alt="Volante del evento Books + Cookies: miércoles a las 5:30 p. m. en el Auditorio. ¡Ven en pijama!"></a>
-        <div class="event-card__body">
-          <p class="event-card__date event-card__date--hot">Este miércoles &middot; 30 de sept. &middot; 5:30 p. m.</p>
-          <h3>Noche de Libros y Galletas</h3>
-          <p>¡Ven en pijama! Lee con tus maestros favoritos y tus amigos en el Auditorio, con galletas y libros para todos. Una noche acogedora para toda la familia.</p>
-          <div class="event-card__btns event-card__btns--stack">
-            <a class="btn" href="events-fundraisers#books-cookies">Detalles del Evento</a>
-            <a class="event-card__more" href="readathon">El Read-A-Thon termina el 2 de oct. &rarr;</a>
-          </div>
-        </div>
-      </article>
-      <article class="event-card">
-        <a class="event-card__media" href="readathon"><img src="../images/readathon-2026.jpg" alt="Volante del Read-A-Thon 2026: del 14 de septiembre al 2 de octubre"></a>
-        <div class="event-card__body">
-          <p class="event-card__date event-card__date--hot">Última semana &middot; termina el 2 de oct.</p>
-          <h3>Read-A-Thon</h3>
-          <p>¡Lee más, haz más, un mañana más brillante! Queda una semana para inscribir a tu lector, registrar minutos y reunir donativos. Cada página leída y cada donación apoya los programas de la PTA, con premios para lectores, recaudadores y salones enteros.</p>
-          <div class="event-card__btns event-card__btns--stack">
-            <a class="btn btn-teal" href="https://willrogerspta.rallyup.com/462ac4" target="_blank" rel="noopener">Inscríbete y Dona</a>
-            <a class="event-card__more" href="readathon">Premios y detalles &rarr;</a>
-          </div>
-        </div>
-      </article>
-      <article class="event-card">
-        <a class="event-card__media" href="reflections-art-program"><img src="../images/reflections-2026.jpg" alt="Volante de la Noche de Arte Reflections: 9 de octubre de 2026 a las 5:30 p. m., Cafetorium de Will Rogers. Tema: What My Culture Means to Me."></a>
-        <div class="event-card__body">
-          <p class="event-card__date">Vie. 9 de oct. &middot; 5:30 p. m.</p>
-          <h3>Noche de Arte Reflections</h3>
-          <p>¡Haz arte, conecta y gana premios! Crea una obra para el tema de este año, «Lo que mi cultura significa para mí», con la ayuda de voluntarios expertos, y participa por una tarjeta de regalo de $25 de Blick. Las obras se entregan hasta el 16 de octubre.</p>
-          <div class="event-card__btns event-card__btns--stack">
-            <a class="btn btn-sage" href="reflections-art-program">Noche de Arte y Cómo Participar</a>
-            <a class="event-card__more" href="reflections-info">Pautas por categoría &rarr;</a>
-          </div>
-        </div>
-      </article>
-      <article class="event-card">
-        <a class="event-card__media event-card__media--fit" href="auction"><img src="../images/grown-ups-night-out.png" alt="Grown-Ups' Night Out (Noche de Adultos)"></a>
-        <div class="event-card__body">
-          <p class="event-card__date">6&ndash;14 de nov. &middot; Fiesta sáb. 14 de nov.</p>
-          <h3>Noche de Adultos y Subasta</h3>
-          <p>¡La fiesta más grande del año! Puja toda la semana por cenas, viajes, experiencias y tesoros únicos donados por negocios locales y familias de Will Rogers, y luego celebremos juntos el sábado 14 de noviembre. ¿Tienes algo para donar? ¡Nos encantaría!</p>
-          <div class="event-card__btns event-card__btns--stack">
-            <a class="btn" href="auction">Detalles de la Subasta y la Noche</a>
-            <a class="event-card__more" href="../files/auction-donation-form.pdf" target="_blank">Dona un artículo para la subasta &rarr;</a>
-          </div>
-        </div>
-      </article>
+    <div class="place__intro">
+      <h2 id="place-heading" class="section-heading">Hay un lugar para todos</h2>
+      <p>Ya sea que tengas una hora libre o la energía de todo un comité, tu familia hace más fuerte a Will Rogers.</p>
+    </div>
+    <ul class="place__ways">
+      <li>
+        <h3>Únete a la PTA</h3>
+        <p>La membresía cuesta $11 y cada miembro vota en nuestras reuniones mensuales de la asociación.</p>
+        <a class="btn" href="membership">Únete por $11</a>
+      </li>
+      <li>
+        <h3>Echa una mano</h3>
+        <p>Ayuda en un evento o únete a un comité de planificación. Cada hora cuenta.</p>
+        <a class="btn btn-quiet" href="volunteer-get-involved">Formas de ayudar</a>
+      </li>
+      <li>
+        <h3>Dona</h3>
+        <p>Las donaciones son deducibles de impuestos (somos una organización 501(c)(3)) y pagan excursiones, la biblioteca, útiles escolares y eventos comunitarios.</p>
+        <a class="btn btn-quiet" href="donate">Donar</a>
+      </li>
+    </ul>
+    <div class="place__also">
+      <div>
+        <h3>Reuniones de la PTA</h3>
+        <p>El primer miércoles de cada mes, de 8:30 a 9:30&nbsp;a.&nbsp;m. en la biblioteca, con café y pan dulce. También puedes participar en línea.</p>
+        <a class="arrow-link" href="pta-meetings">Reuniones y agendas</a>
+      </div>
+      <div>
+        <h3>Noticias y anuncios</h3>
+        <p>Ponte al día con las últimas noticias, o síguenos en Instagram y Facebook.</p>
+        <a class="arrow-link" href="latest-news-announcements">Últimas noticias</a>
+      </div>
+      <div>
+        <h3>¿Preguntas?</h3>
+        <p>Nos encantaría saber de ti. Encuentra a quién escribir: la mesa directiva, los comités y las PTAs del consejo, distrito y estado.</p>
+        <a class="arrow-link" href="contact-us">Contáctanos</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="award" id="excellence">
   <div class="container award__inner">
-    <img class="award__seal" src="../images/pta-school-of-excellence-2025-2027.png" alt="Orgullosos de ser una National PTA School of Excellence, 2025-2027">
+    <img class="award__seal" src="../images/pta-school-of-excellence-2025-2027-464.webp" width="464" height="464" loading="lazy" alt="Orgullosos de ser una National PTA School of Excellence, 2025-2027">
     <div class="award__text">
-      <p class="award__kicker">&#x1F389; ¡Hurra!</p>
-      <h2>Will Rogers es una Escuela de Excelencia de la PTA Nacional</h2>
-      <p>Nuestra PTA obtuvo la designación <strong>National PTA School of Excellence 2025&ndash;2027</strong> (Escuela de Excelencia) y fue reconocida con el <a href="https://www.pta.org/home/run-your-pta/Awards-Grants/Phoebe-Apperson-Hearst-Awards" target="_blank" rel="noopener"><strong>Phoebe Apperson Hearst Family-School Partnership Award of Merit</strong></a>, uno de los más altos honores nacionales de la PTA por fortalecer la colaboración entre las familias y la escuela. ¡Gracias a toda nuestra comunidad &mdash; este premio es suyo!</p>
-      <a class="btn" href="https://www.pta.org/home/programs/National-PTA-School-of-Excellence" target="_blank" rel="noopener">Sobre el programa</a>
-    </div>
-  </div>
-</section>
-
-<section class="ib-strip">
-  <div class="ib-strip__inner">
-    <img src="../images/ib-world-school-logo.svg" alt="Logotipo de Escuela del Mundo del Bachillerato Internacional">
-    <p>Will Rogers Learning Community es una orgullosa <strong>Escuela del Mundo del Bachillerato Internacional&reg;</strong>.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container columns-2">
-    <div>
-      <h2 class="section-heading">¡Bienvenidos!</h2>
-      <p>La Asociación de Padres y Maestros (PTA) de Will Rogers está formada por padres, familiares, maestros, personal y miembros de la comunidad dedicados a impactar positivamente la vida de todos los niños y familias de Will Rogers Learning Community, una escuela primaria de Bachillerato Internacional en Santa Mónica, California.</p>
-      <p><a class="btn" href="membership">Más Información</a></p>
-    </div>
-    <div>
-      <div class="callout">
-        <h3>Mantente al tanto</h3>
-        <p>Nuestro boletín semanal de los miércoles reúne todas las inscripciones, fechas y recordatorios en un solo lugar. Ponte al día con los enlaces más recientes, o síguenos en Instagram y Facebook.</p>
-        <a class="btn" href="links">Enlaces e Inscripciones</a>
+      <h2><span class="award__cheer">¡Hurra!</span> Will Rogers es una Escuela de Excelencia de la PTA Nacional</h2>
+      <p>Nuestra PTA obtuvo la designación <strong>National PTA School of Excellence 2025&ndash;2027</strong> (Escuela de Excelencia) y fue reconocida con el <a href="https://www.pta.org/home/run-your-pta/Awards-Grants/Phoebe-Apperson-Hearst-Awards" target="_blank" rel="noopener"><strong>Phoebe Apperson Hearst Family-School Partnership Award of Merit</strong><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>, uno de los más altos honores nacionales de la PTA por fortalecer la colaboración entre las familias y la escuela. ¡Gracias a toda nuestra comunidad &mdash; este premio es suyo!</p>
+      <a class="btn" href="https://www.pta.org/home/programs/National-PTA-School-of-Excellence" target="_blank" rel="noopener">Sobre el programa<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+      <div class="award__ib">
+        <img src="../images/ib-world-school-logo.svg" height="44" alt="">
+        <p>Will Rogers Learning Community también es una orgullosa <strong>Escuela del Mundo del Bachillerato Internacional&reg;</strong>.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="container">
-    <h2>Hay un lugar para todos</h2>
-    <p>Ya sea que tengas una hora libre o la energía de todo un comité, tu familia hace más fuerte a Will Rogers. Únete, dona o echa una mano: cada aporte cuenta.</p>
-    <div class="cta-band__btns">
-      <a class="btn" href="membership">Únete a la PTA</a>
-      <a class="btn btn-sage" href="volunteer-get-involved">Voluntariado</a>
-      <a class="btn btn-outline" href="donate">Donar</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-icon">&#x1F64C;</div>
-        <h3>Únete a la PTA</h3>
-        <p>La PTA es la organización de defensa de la niñez más grande del país. La membresía cuesta $11 y demuestra que la educación es importante para ti. Cada miembro puede votar sobre decisiones importantes de nuestra escuela en las reuniones mensuales de la asociación.</p>
-        <a class="btn" href="membership">+ Inscríbete</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F49B;</div>
-        <h3>Donar</h3>
-        <p>La PTA de Will Rogers es una organización 501(c)3 y todas las donaciones son deducibles de impuestos. Una donación directa tiene el mayor impacto y apoya a cada estudiante y a cada salón, ayudándonos a pagar excursiones, la biblioteca, eventos comunitarios, útiles escolares y mucho más.</p>
-        <a class="btn" href="donate">+ Donar</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4E3;</div>
-        <h3>Noticias y Anuncios</h3>
-        <p>Mantente conectado e informado leyendo nuestro boletín semanal, con información sobre próximos eventos y recaudaciones de toda la escuela, oportunidades importantes, alertas de defensa, anuncios de reuniones de la PTA y mucho más.</p>
-        <a class="btn" href="latest-news-announcements">+ Últimas Noticias</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4C5;</div>
-        <h3>Reuniones y Agendas</h3>
-        <p>Las reuniones de la PTA son en persona, de 8:30 a 9:30 a. m., el primer miércoles de cada mes en la biblioteca &mdash; ¡ven por café y pan dulce! Hay opción virtual para quienes necesiten participar desde casa. Las agendas se publican antes de cada reunión.</p>
-        <a class="btn" href="pta-meetings">+ Información de Reuniones</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F64B;</div>
-        <h3>Voluntariado</h3>
-        <p>Nuestra PTA es una organización de voluntarios formada por padres, familiares, maestros, personal y miembros de la comunidad como tú, que quieren tener un impacto positivo en la vida de los estudiantes. Hay muchas maneras de participar.</p>
-        <a class="btn" href="volunteer-get-involved">+ Más Información</a>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x2709;&#xFE0F;</div>
-        <h3>Contáctanos</h3>
-        <p>¡Queremos saber de ti! Encuentra cómo comunicarte con los oficiales de la PTA y buscar comités específicos. Encuentra enlaces a nuestro Consejo, Distrito, PTA Estatal y Nacional, y otros recursos útiles.</p>
-        <a class="btn" href="contact-us">+ Contactar a la PTA</a>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <!-- ===== Site footer (Spanish — keep in sync across pages) ===== -->
 <footer class="site-footer">
@@ -263,28 +276,28 @@
     <div>
       <h3>Asuntos de la PTA</h3>
       <ul>
-        <li><a href="https://jointotem.com/ca/santa-monica/will-rogers-elementary-pta" target="_blank" rel="noopener">Únete a la PTA / Cuotas de Membresía</a></li>
+        <li><a href="https://jointotem.com/ca/santa-monica/will-rogers-elementary-pta" target="_blank" rel="noopener">Únete a la PTA / Cuotas de Membresía<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
         <li><a href="pta-meetings">Reuniones y Agendas</a></li>
-        <li><a href="../files/reimbursement-request.pdf" target="_blank">Solicitud de Reembolso</a></li>
+        <li><a href="../files/reimbursement-request.pdf" target="_blank">Solicitud de Reembolso<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
         <li><a href="forms-flyers">Formularios y Volantes</a></li>
-        <li><a href="https://capta.org/focus-areas/advocacy/current-legislation/" target="_blank" rel="noopener">Defensa y Legislación</a></li>
-        <li><a href="https://smmpta.org/dei/" target="_blank" rel="noopener">Diversidad, Equidad e Inclusión (DEI)</a></li>
+        <li><a href="https://capta.org/focus-areas/advocacy/current-legislation/" target="_blank" rel="noopener">Defensa y Legislación<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="https://smmpta.org/dei/" target="_blank" rel="noopener">Diversidad, Equidad e Inclusión (DEI)<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
         <li><a href="dynamic-calendar">Calendario</a></li>
         <li><a href="contact-us">Directorio</a></li>
-        <li><a href="https://capta.org/pta-leaders/run-your-pta/nominations-and-elections/" target="_blank" rel="noopener">Elecciones y Nominaciones</a></li>
+        <li><a href="https://capta.org/pta-leaders/run-your-pta/nominations-and-elections/" target="_blank" rel="noopener">Elecciones y Nominaciones<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
       </ul>
     </div>
     <div>
       <h3>Recursos</h3>
       <ul>
-        <li><a href="http://smmpta.org" target="_blank" rel="noopener">Consejo de PTAs de Santa Mónica-Malibú</a></li>
-        <li><a href="https://www.33rdpta.org" target="_blank" rel="noopener">PTA del Distrito Treinta y Tres</a></li>
-        <li><a href="http://capta.org" target="_blank" rel="noopener">PTA del Estado de California</a></li>
-        <li><a href="http://pta.org" target="_blank" rel="noopener">PTA Nacional</a></li>
-        <li><a href="http://rogers.smmusd.org" target="_blank" rel="noopener">Will Rogers Learning Community</a></li>
-        <li><a href="http://smmusd.org" target="_blank" rel="noopener">Distrito Escolar Unificado de Santa Mónica-Malibú</a></li>
-        <li><a href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E10328&amp;id=19" target="_blank" rel="noopener">Fundación Educativa de Santa Mónica</a></li>
-        <li><a href="https://capta.org/pta-leaders/services/insurance/" target="_blank" rel="noopener">Guía de Seguros de la PTA</a></li>
+        <li><a href="http://smmpta.org" target="_blank" rel="noopener">Consejo de PTAs de Santa Mónica-Malibú<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="https://www.33rdpta.org" target="_blank" rel="noopener">PTA del Distrito Treinta y Tres<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="http://capta.org" target="_blank" rel="noopener">PTA del Estado de California<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="http://pta.org" target="_blank" rel="noopener">PTA Nacional<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="http://rogers.smmusd.org" target="_blank" rel="noopener">Will Rogers Learning Community<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="http://smmusd.org" target="_blank" rel="noopener">Distrito Escolar Unificado de Santa Mónica-Malibú<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E10328&amp;id=19" target="_blank" rel="noopener">Fundación Educativa de Santa Mónica<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        <li><a href="https://capta.org/pta-leaders/services/insurance/" target="_blank" rel="noopener">Guía de Seguros de la PTA<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
       </ul>
     </div>
     <div>
@@ -292,14 +305,14 @@
       <p>2401 14th Street<br>Santa Monica, California, 90405</p>
       <p><a href="mailto:communications@willrogerspta.com">communications@willrogerspta.com</a></p>
       <div class="footer-social">
-        <a href="https://www.facebook.com/willrogerslc" target="_blank" rel="noopener" aria-label="Facebook"><img src="../images/icon-facebook.png" alt="Facebook"></a>
-        <a href="https://instagram.com/willrogersnews" target="_blank" rel="noopener" aria-label="Instagram"><img src="../images/icon-instagram.png" alt="Instagram"></a>
-        <a href="https://twitter.com/willrogersstem" target="_blank" rel="noopener" aria-label="Twitter"><img src="../images/icon-twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/willrogerslc" target="_blank" rel="noopener" aria-label="Facebook, se abre en una pestaña nueva"><img src="../images/icon-facebook.png" width="40" height="40" alt=""></a>
+        <a href="https://instagram.com/willrogersnews" target="_blank" rel="noopener" aria-label="Instagram, se abre en una pestaña nueva"><img src="../images/icon-instagram.png" width="40" height="40" alt=""></a>
+        <a href="https://x.com/willrogersstem" target="_blank" rel="noopener" aria-label="X (Twitter), se abre en una pestaña nueva"><img src="../images/icon-x.svg" width="40" height="40" alt=""></a>
       </div>
     </div>
   </div>
   <div class="footer-legal">
-    <p>&copy; 2026-27 Will Rogers Elementary PTA &nbsp;&middot;&nbsp; ID FISCAL# 23-7017326</p>
+    <p>&copy; 2026-27 Will Rogers PTA &nbsp;&middot;&nbsp; ID FISCAL# 23-7017326</p>
   </div>
 </footer>
 
