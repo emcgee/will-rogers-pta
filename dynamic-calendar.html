@@ -29,8 +29,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2026092802">
-  <script src="js/site.js?v=2026092802" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=2026093001">
+  <script src="js/site.js?v=2026093001" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -59,7 +59,6 @@
             <li><a href="jogathon">Jog-a-thon</a></li>
             <li><a href="auction">Grown-Ups&rsquo; Night Out &amp; Auction</a></li>
             <li><a href="links">Latest Links &amp; Sign-Ups</a></li>
-            <li><a href="joinandgive">Join and Give</a></li>
           </ul>
         </li>
         <li class="dropdown"><a href="latest-news-announcements">More</a>
@@ -79,20 +78,42 @@
 </header>
 
 <main id="main">
-
-<div class="page-hero"><h1>Calendar</h1></div>
+<header class="page-intro" data-hue="sky">
+  <div class="container">
+    <div class="page-intro__text">
+      <h1>Calendar</h1>
+      <p class="page-intro__lede">The PTA&rsquo;s whole year at a glance lives in a shared Google Doc. Here&rsquo;s what&rsquo;s coming up next, with the full calendar below.</p>
+      <div class="page-intro__actions"><a class="btn" href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Open the full calendar<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      <p class="page-intro__note">On a phone, the full calendar is easiest to read in its own tab.</p>
+    </div>
+  </div>
+  <div class="wave-divider"><svg viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C240,72 480,72 720,44 C960,16 1200,16 1440,40 L1440,70 L0,70 Z"></path></svg></div>
+</header>
 
 <section class="section">
-  <div class="container">
-    <p class="center">
-      <a class="btn btn-teal" href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Year-at-a-Glance<span class="visually-hidden"> (opens in a new tab)</span></a>
-    </p>
+  <div class="container narrow">
+    <h2 class="section-heading">Coming up</h2>
+    <ul class="up-list">
+      <li data-hue="sun" data-start="2026-09-30" data-end="2026-09-30"><a class="up-link" href="events-fundraisers#books-cookies"><span class="up-date" aria-hidden="true"><span class="m">Sep</span><span class="d">30</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>Books + Cookies Night</strong><span>Wed, Sept 30 &middot; 5:30&nbsp;p.m. &middot; Auditorium</span></span></a></li>
+      <li data-hue="sky" data-start="2026-09-14" data-end="2026-10-02"><a class="up-link" href="readathon"><span class="up-date" aria-hidden="true"><span class="m">Oct</span><span class="d">2</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>Read-A-Thon</strong><span>Register &amp; donate through Fri, Oct 2</span></span></a></li>
+      <li data-hue="sky" data-start="2026-10-07" data-end="2026-10-07"><a class="up-link" href="pta-meetings"><span class="up-date" aria-hidden="true"><span class="m">Oct</span><span class="d">7</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>PTA meeting</strong><span>Wed, Oct 7 &middot; 8:30&nbsp;a.m. &middot; Library or Zoom</span></span></a></li>
+      <li data-hue="sage" data-start="2026-10-09" data-end="2026-10-09"><a class="up-link" href="reflections-art-program"><span class="up-date" aria-hidden="true"><span class="m">Oct</span><span class="d">9</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>Reflections Art Night</strong><span>Fri, Oct 9 &middot; 5:30&nbsp;p.m. &middot; Cafetorium</span></span></a></li>
+      <li data-hue="sage" data-start="2026-10-09" data-end="2026-10-16"><a class="up-link" href="reflections-art-program#enter"><span class="up-date" aria-hidden="true"><span class="m">Oct</span><span class="d">16</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>Reflections entries due</strong><span>Email your entry by Fri, Oct 16</span></span></a></li>
+      <li data-hue="sky" data-start="2026-11-04" data-end="2026-11-04"><a class="up-link" href="pta-meetings"><span class="up-date" aria-hidden="true"><span class="m">Nov</span><span class="d">4</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>PTA meeting</strong><span>Wed, Nov 4 &middot; 8:30&nbsp;a.m. &middot; Library or Zoom</span></span></a></li>
+      <li data-hue="night" data-start="2026-11-06" data-end="2026-11-14"><a class="up-link" href="auction"><span class="up-date" aria-hidden="true"><span class="m">Nov</span><span class="d">14</span></span><span class="up-text"><span class="status-pill" hidden></span><strong>Grown-Ups&rsquo; Night Out &amp; Auction</strong><span>Auction Nov 6&ndash;14 &middot; Party Sat, Nov 14</span></span></a></li>
+    </ul>
+    <p class="up-empty" hidden>Nothing else on the calendar right now. New dates land in the Wednesday newsletter.</p>
+    <p style="margin-top:22px">PTA meetings are the first Wednesday of most months. <a href="pta-meetings">See every meeting date</a>.</p>
+  </div>
+</section>
 
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-heading">The full 2026&ndash;27 calendar</h2>
     <!-- Live 2026-27 events calendar: a Google Doc maintained by the PTA. -->
-    <div class="calendar-embed" style="aspect-ratio:3/4;max-width:840px;margin:0 auto">
-      <iframe src="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/preview" title="Will Rogers PTA 2026-27 Events Calendar"></iframe>
+    <div class="calendar-embed" style="aspect-ratio:3/4;max-width:840px;margin:24px auto 0">
+      <iframe src="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/preview" title="Will Rogers PTA 2026-27 Events Calendar" loading="lazy"></iframe>
     </div>
-    <p class="center" style="margin-top:16px"><a href="https://docs.google.com/document/d/1gLgiUcB7IIi2kPPlOFdBVoMMdNoS3pegHeohxd8AxnM/edit?usp=sharing" target="_blank" rel="noopener">Open the calendar full screen<span class="visually-hidden"> (opens in a new tab)</span></a></p>
     <!-- Alternative: embed a public Google Calendar instead. Replace CALENDAR_ID_GOES_HERE
          with the calendar ID from Google Calendar > Settings > "Integrate calendar"
          (looks like xxxx@group.calendar.google.com; calendar must be public), then
@@ -103,14 +124,13 @@
     -->
   </div>
 </section>
-
 </main>
 
 <!-- ===== Site footer (identical on every page — edit on all pages together) ===== -->
 <footer class="site-footer">
   <div class="footer-columns">
     <div>
-      <h3>PTA Business</h3>
+      <h2>PTA Business</h2>
       <ul>
         <li><a href="https://jointotem.com/ca/santa-monica/will-rogers-elementary-pta" target="_blank" rel="noopener">Join PTA / Membership Dues<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         <li><a href="pta-meetings">Meetings &amp; Agendas</a></li>
@@ -124,7 +144,7 @@
       </ul>
     </div>
     <div>
-      <h3>Resources</h3>
+      <h2>Resources</h2>
       <ul>
         <li><a href="http://smmpta.org" target="_blank" rel="noopener">Santa Monica-Malibu Council of PTAs<span class="visually-hidden"> (opens in a new tab)</span></a></li>
         <li><a href="https://www.33rdpta.org" target="_blank" rel="noopener">Thirty-Third District PTA<span class="visually-hidden"> (opens in a new tab)</span></a></li>
@@ -137,13 +157,12 @@
       </ul>
     </div>
     <div>
-      <h3>Will Rogers PTA</h3>
+      <h2>Will Rogers PTA</h2>
       <p>2401 14th Street<br>Santa Monica, California, 90405</p>
       <p><a href="mailto:communications@willrogerspta.com">communications@willrogerspta.com</a></p>
       <div class="footer-social">
         <a href="https://www.facebook.com/willrogerslc" target="_blank" rel="noopener" aria-label="Facebook, opens in a new tab"><img src="images/icon-facebook.png" width="40" height="40" alt=""></a>
         <a href="https://instagram.com/willrogersnews" target="_blank" rel="noopener" aria-label="Instagram, opens in a new tab"><img src="images/icon-instagram.png" width="40" height="40" alt=""></a>
-        <a href="https://x.com/willrogersstem" target="_blank" rel="noopener" aria-label="X (Twitter), opens in a new tab"><img src="images/icon-x.svg" width="40" height="40" alt=""></a>
       </div>
     </div>
   </div>

@@ -44,7 +44,10 @@ This is the only PTA for this school and this community. It is a 2025–2027 Nat
 - Every English page has a Spanish page at `es/<same-file>`, and changes must land in both.
 - The site does not process payments, run accounts, or collect form data itself. It links out to Totem, Square, Google Docs and Forms, and sign-up platforms.
 - Anything built has to stay editable by a non-programmer volunteer: readable HTML, no tooling to install, and content that is easy to find and change in the page file.
-- **Open / pending:** the domain and DNS cutover off Wix, and email routing for the @willrogerspta.com aliases (see `DOMAIN-MIGRATION.md`). The newsletter signup (Mailchimp) has no signup URL yet, so it is currently a mailto link.
+- **Never publish a fundraising goal amount.** No dollar goal for the Will Rogers Fund, the annual giving drive, or any fundraiser appears anywhere on the site. Asks stay open-ended ("any amount helps"). Participation goals (like 100% of families) are fine. Prize thresholds on event pages (e.g. "$20+ raised") are fine.
+- **Volunteering starts three ways:** the volunteer-list form, an email to volunteers@willrogerspta.com, or coming to a PTA meeting.
+- **Reflections entries are submitted by email** to reflections@willrogerspta.com.
+- **Open / pending:** the site is live on GitHub Pages at the custom domain; email routing for the @willrogerspta.com aliases (see `DOMAIN-MIGRATION.md`). The newsletter signup (Mailchimp) has no signup URL yet, so it is currently a mailto link.
 
 ## Brand Commitments
 
@@ -59,7 +62,7 @@ This is the only PTA for this school and this community. It is a 2025–2027 Nat
 - **Nonprofit facts:** 501(c)(3), tax ID 23-7017326, 2401 14th Street, Santa Monica, CA 90405, communications@willrogerspta.com.
 - **Real campus photography** in `images/heroes/`: assembly, ribbon cutting, Earth Day, farm stand, Holi, students, and the School of Excellence celebration.
 - **Event graphics and flyers** in `images/`, **PDF forms** in `files/`, and a "where your money goes" graphic.
-- **Social:** Facebook (willrogerslc), Instagram (willrogersnews), Twitter/X (willrogersstem).
+- **Social:** Facebook (willrogerslc), Instagram (willrogersnews), and a WhatsApp group with no public link. The PTA no longer uses its X/Twitter account; don't link it.
 - **Absences:** there are no family testimonials, fundraising totals, or impact numbers beyond what the pages already state. Don't invent quotes, dollar figures, or participation stats.
 
 ## Product Principles

@@ -3,14 +3,12 @@ name: Will Rogers PTA
 description: A warm, bilingual front porch for the Will Rogers Learning Community, painted in the colors of its logo.
 colors:
   pacific-cyan: "#12a8c9"
-  pacific-cyan-deep: "#0e8ca8"
   lifeguard-teal: "#0e7f96"
   lifeguard-teal-deep: "#0a5f72"
   deep-kelp-ink: "#093943"
   santa-monica-sun: "#f5c02e"
   santa-monica-sun-deep: "#e2a90f"
   cactus-sage: "#7cc6b0"
-  cactus-sage-deep: "#5aa892"
   porch-cream: "#fff8ec"
   cyan-wash: "#e4f5f9"
   sage-wash: "#e8f5f0"
@@ -20,7 +18,7 @@ colors:
   muted-text: "#55707a"
   footer-text: "#cfe6ea"
   footer-legal: "#9fc2c8"
-  sage-hover: "#6bbba4"
+  night-wash: "#0b4450"
 typography:
   display:
     fontFamily: "Poppins, Fredoka, system-ui, sans-serif"
@@ -57,6 +55,7 @@ rounded:
   lg: "22px"
   sm: "14px"
   invite: "28px"
+  print: "6px"
   badge: "10px"
 spacing:
   gutter: "22px"
@@ -74,15 +73,6 @@ components:
   button-primary-hover:
     backgroundColor: "{colors.santa-monica-sun-deep}"
     textColor: "{colors.deep-kelp-ink}"
-  button-teal:
-    backgroundColor: "{colors.lifeguard-teal}"
-    textColor: "{colors.surface-white}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: "14px 32px"
-  button-teal-hover:
-    backgroundColor: "{colors.lifeguard-teal-deep}"
-    textColor: "{colors.surface-white}"
   button-quiet:
     backgroundColor: "{colors.surface-white}"
     textColor: "{colors.deep-kelp-ink}"
@@ -92,14 +82,6 @@ components:
   button-quiet-hover:
     backgroundColor: "{colors.cyan-wash}"
     textColor: "{colors.deep-kelp-ink}"
-  button-sage:
-    backgroundColor: "{colors.cactus-sage}"
-    textColor: "{colors.deep-kelp-ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: "14px 32px"
-  button-sage-hover:
-    backgroundColor: "{colors.sage-hover}"
   button-outline:
     backgroundColor: "transparent"
     textColor: "{colors.surface-white}"
@@ -181,7 +163,7 @@ The system rejects three things: the **generic Wix template** (stock photos, pla
 - Pill-shaped actions; soft 22px cards; single-target links and buttons lift.
 - A 6px four-color stripe (cyan → sage → sun → teal) caps both the header and the footer.
 - Flyers as the art: every event shows its real flyer as a white-bordered print, tilted a couple of degrees, with a round date sticker slapped on the corner.
-- Real campus photography under a dark-teal spotlight scrim; flat teal-to-deep-teal gradient bands for interior page heroes.
+- Real campus photography under a dark-teal spotlight scrim; interior pages open on a field of their own hue with the title, purpose and main action.
 - Bilingual at parity: every layout carries Spanish strings as comfortably as English.
 
 ## Colors
@@ -189,12 +171,12 @@ The system rejects three things: the **generic Wix template** (stock photos, pla
 The palette is the logo's own: ocean cyans and teals, one warm sun gold, and a soft cactus sage, all on a cream porch.
 
 ### Primary
-- **Santa Monica Sun** (`santa-monica-sun`): the action color. Primary buttons (Join, Donate, Register), the Donate pill in the nav, the featured event's button, the gold underline under section headings, and the active-nav marker. Its deeper variant (`santa-monica-sun-deep`) is the hover state and the ✕ in tick lists.
-- **Pacific Cyan** (`pacific-cyan`): the brand's bright voice as a *graphic* color: the four-color stripe, the language toggle's outline, the default top edge on cards and the left edge on meeting items. It never carries text. The deeper variant (`pacific-cyan-deep`) is currently unused; never use it for text.
+- **Santa Monica Sun** (`santa-monica-sun`): the action color. Primary buttons (Join, Donate, Register), the Donate pill in the nav, the featured event's button, the gold underline under section headings, and the active-nav marker. Its deeper variant (`santa-monica-sun-deep`) is the hover state.
+- **Pacific Cyan** (`pacific-cyan`): the brand's bright voice as a *graphic* color: the four-color stripe, the language toggle's outline, and the rim of link-hub rows on hover. It never carries text.
 
 ### Secondary
-- **Lifeguard Teal** (`lifeguard-teal`): the fill for secondary buttons (`btn-teal`) and the rim of quiet buttons, the `sky` date sticker, the start of page-hero gradients, and the fourth card accent. The deeper variant (`lifeguard-teal-deep`, the CSS `--link` token) is the color of every link, eyebrow, active nav item and small colored text on light backgrounds (6.9:1 on cream).
-- **Cactus Sage** (`cactus-sage`): the soft third accent. Sage buttons, the top edge on board-member cards, the third card accent and the middle of the rainbow stripe. The deeper variant (`cactus-sage-deep`) is the ✓ in tick lists.
+- **Lifeguard Teal** (`lifeguard-teal`): the rim of quiet buttons, the `sky` hue's date sticker, the teal link-hub row, and hover fills on the language toggle. The deeper variant (`lifeguard-teal-deep`, the CSS `--link` token) is the color of every link, active nav item, Facts label and small colored text on light backgrounds (6.9:1 on cream).
+- **Cactus Sage** (`cactus-sage`): the soft third accent: the `sage` hue's date sticker and the middle of the four-color stripe. Sage Wash is the alternate section band.
 
 ### Neutral
 - **Deep Kelp Ink** (`deep-kelp-ink`): all headings, text on gold and sage fills, the footer background, and the tint in every shadow. It is the darkest color in the system and the only near-black.
@@ -203,12 +185,11 @@ The palette is the logo's own: ocean cyans and teals, one warm sun gold, and a s
 - **Cyan Wash / Sage Wash / Sun Wash** (`cyan-wash`, `sage-wash`, `sun-wash`): pale tints for alternating section bands (`section-mint`, `section-alt`), card icon tiles and the award band.
 - **Body Text** (`body-text`) for paragraphs and **Muted Text** (`muted-text`) for card and event descriptions and secondary lines.
 - **Footer Text** (`footer-text`): links and copy on the Deep Kelp Ink footer; **Footer Legal** (`footer-legal`) for the copyright line.
-- **Sage Hover** (`sage-hover`): the sage button's hover fill, chosen so ink text stays above 4.5:1.
 
 ### Named Rules
 **The Sun Is the Button Rule.** Santa Monica Sun means "do this." The most important action in any view is a gold pill with Deep Kelp Ink text. Cyan and sage buttons are the second and third choices, never the main one.
 
-**The Logo-Only Palette Rule.** Every hue comes from the logo. The only exceptions are the social brand accents on the link hub and footer (Instagram, Facebook, WhatsApp, X). Don't add new hues to decorate.
+**The Logo-Only Palette Rule.** Every hue comes from the logo. The only exceptions are the social brand accents on the link hub and footer (Instagram, Facebook, WhatsApp). Don't add new hues to decorate.
 
 **The Contrast Floor Rule.** White text only on Lifeguard Teal or darker (4.7:1 and up); on Pacific Cyan it is 2.8:1, so cyan never carries text. Text on Sun or Sage fills is always Deep Kelp Ink (7.4:1 and 6.3:1). Small colored text on cream or white is `lifeguard-teal-deep`. Gold text only on Deep Kelp Ink or gradients that end at `#0a4f5e` or darker. A gradient behind text is judged at its lightest stop.
 
@@ -225,13 +206,13 @@ The palette is the logo's own: ocean cyans and teals, one warm sun gold, and a s
 - **Headline** (Fredoka 700, `clamp(1.9rem, 4vw, 2.8rem)`, 1.12): section `h2`s, usually followed by the gold underline bar.
 - **Title** (Fredoka 700, 1.45rem, 1.12): card, event and callout `h3`s. `h4` steps down to 1.2rem.
 - **Body** (Nunito Sans 400, 17px, 1.7): all reading text. The hero subhead goes to 1.28rem, and CTA-band copy is 1.15rem, capped near 640–660px wide.
-- **Label** (Fredoka 600, 0.9rem, 0.16em tracking, uppercase): existing eyebrows on interior pages, footer column headings, date-sticker months (0.72rem, 0.14em) and status pills (0.8rem, 0.06em). Tracking ranges from 0.08em on small pills to 0.22em on save-the-date kickers.
+- **Label** (Fredoka 600, 0.9rem, 0.16em tracking, uppercase): Facts labels, footer column headings, date-sticker months (0.72rem, 0.14em) and status pills (0.8rem, 0.06em). Tracking ranges from 0.08em on small pills to 0.22em on save-the-date kickers.
 - **Button** (Fredoka 600, 1rem): every button, nav link (500, 0.95rem), chip and link-hub row. Interactive text is always Fredoka.
 
 ### Named Rules
 **The Three-Voice Rule.** Poppins shouts (hero titles and big numbers only), Fredoka talks (headings, buttons, nav, labels: anything you scan or tap), and Nunito Sans explains (paragraphs). Never set a paragraph in Fredoka or a button in Nunito Sans.
 
-**The Heading-Speaks Rule.** A heading carries its own weight. Don't add new uppercase eyebrow labels above headings; the homepage has none. Voice that used to live in a kicker ("Huzzah!") goes into the heading itself. Existing interior-page eyebrows stay until those pages are revisited: `lifeguard-teal-deep` on light, white on page heroes.
+**The Heading-Speaks Rule.** A heading carries its own weight. The site has no uppercase eyebrow labels above headings. Voice that used to live in a kicker ("Huzzah!", "Everyone's welcome") goes into the heading or the intro sentence. Small uppercase labels are allowed only inside data panels (the `dt` labels in Facts).
 
 ## Layout
 
@@ -245,7 +226,7 @@ The palette is the logo's own: ocean cyans and teals, one warm sun gold, and a s
   - The footer is three columns, stacking at ≤820px.
 - **Homepage hero (slim):** a full-bleed photo picked at random from `images/heroes/` on each load, under a radial "spotlight" scrim plus a linear teal wash. It holds only the h1 ("Welcome to the Will Rogers PTA"), one line of identity copy, and two small outline pills (Join, Donate) that never stack full-width. A cream SVG wave closes it (64px, 40px on phones), and the invitation overlaps the wave by 30px (18px on phones). On a 390×844 phone the invitation's flyer, title, date and button sit in the first screen.
 - **Homepage order:** hero → Coming up (flyer wall) → Find your place → award band (School of Excellence, Hearst, IB) → footer. The page ends on celebration.
-- **Interior page hero:** a centered title on a 135° Lifeguard Teal → Lifeguard Teal Deep gradient, 66px top and 82px bottom padding. No photo.
+- **Interior page intro:** a left-aligned title, purpose line and main action on a field of the page's hue, closed by the cream wave (see Components). It replaced the old centered teal gradient title bar.
 - **Header:** sticky, translucent cream (94%) with an 8px backdrop blur, the logo on the left, the School of Excellence seal on the right, and 62px-tall marks. Below 1080px the header row wraps: logo, seal, a visible language pill, and a 44×44 menu button on the first row; the nav opens as a full-width white panel on its own row that scrolls on its own (capped at `100dvh - 130px`). At ≤480px the logo and seal drop to 40/44px; under 370px the seal hides so the language pill always fits.
 - **Link hub (`/links`):** a single 620px column of large tappable rows, built for social-bio traffic.
 
@@ -273,10 +254,9 @@ The form language is round and soft throughout. There are no sharp corners anywh
 - **Pills (`rounded.pill`):** every button, nav link, status pill, date sticker (a full circle), chip, language toggle, menu button, link-hub row and "New" badge.
 - **Invitation corners (`rounded.invite`, 28px):** the event invitation only, the softest shape on the site.
 - **Large soft corners (`rounded.lg`, 22px):** cards, flyer mats, the Find-your-place panel, callouts, meeting items, the save-the-date block, the save strip, the calendar embed and flyer images.
-- **Small soft corners (`rounded.sm`, 14px):** dropdown menus, the mobile nav panel, board-member cards, the award seal and images nested inside a larger card. Flyer prints use 6px (a print's corner, not a card's). Nested elements always step down from the 22px parent.
+- **Small soft corners (`rounded.sm`, 14px):** dropdown menus, the mobile nav panel, the award seal and images nested inside a larger card. Flyer prints use 6px (a print's corner, not a card's). Nested elements always step down from the 22px parent.
 - **Badge corners (`rounded.badge`, 10px):** the header seal. 8px on dropdown rows.
-- **Accent edges:** a thick colored edge carries identity instead of an outline. Cards get a 6px top edge that rotates cyan → sun → sage → teal down a grid. Callouts and the events-page featured event get a 7px Sun left edge, meeting items a 6px cyan left edge, and board cards a 4px sage top edge.
-- **Icon tiles:** 62px rounded squares (18px corners) holding an emoji, tinted to match the card's accent and tilted -4°.
+- **Hairlines, not colored edges:** panels and lists divide with 1px `rgba(9,57,67,0.12)` hairlines. The thick colored card edges and emoji icon tiles of the old interior pages are retired.
 - **Signature marks:** the tilted flyer print with its date sticker, the 64×5px rounded gold bar under section headings, the 6px four-color stripe on the header and footer, and the cream wave at the base of the homepage hero.
 
 ## Components
@@ -286,21 +266,40 @@ Tactile and buoyant: fat pills that glow in their own color and hop when you poi
 - **Shape:** full pill (999px) with a 3px transparent border reserved for the outline variant, padding 14px 32px. Compact contexts (event cards, award band, meeting list) use 10–11px × 24px at 0.9rem.
 - **Primary:** Santa Monica Sun fill, Deep Kelp Ink text, Fredoka 600, sun glow.
 - **Hover:** deepens to `santa-monica-sun-deep`, rises 3px, glow grows. 0.15s ease on transform, shadow and background.
-- **Teal / Sage:** the same shape and behavior in Lifeguard Teal (white text) or Cactus Sage (ink text, `sage-hover` on hover).
 - **Quiet:** white pill with a 2px Lifeguard Teal rim and ink text, no glow; Cyan Wash on hover. The secondary action next to a gold one, so each band keeps a single gold pill.
 - **Arrow link:** Fredoka 600 in `lifeguard-teal-deep` with a trailing → that nudges 3px on hover. The tertiary action ("Prizes & details →").
 - **Outline:** transparent with an 85%-white 3px border and white text, for photo and gradient backgrounds only. Fills white with ink text on hover.
 - **Focus:** every focusable element gets a 3px Deep Kelp Ink outline at 3px offset (Sun gold on dark bands and photos). A gold skip link appears top-left on the first Tab.
 
-### Chips
-- **Style:** white pill, Fredoka 600 ink text at 1rem, an emoji leading, resting card shadow, 11px 20px padding. Wrapped in a centered 12px-gap row. Informational, not interactive.
+### Page Intro (every interior page)
+Replaces the old flat teal title bar. A field in the page's hue (`data-hue`: sun, sky, sage or night) closed by the cream wave, holding:
+- an optional status pill;
+- the h1 in Poppins 800 (up to 3.6rem, 18ch max);
+- an optional Fredoka "when" line;
+- one sentence on what the page is for (1.2rem, 56ch max);
+- the page's main action: at most one gold pill, plus quiet pills or arrow links;
+- an optional note (0.95rem, muted) for reassurance such as the tax ID or "takes about a minute".
 
-### Cards / Containers
-- **Corner Style:** 22px.
-- **Background:** Surface White on the cream porch or a tinted band.
-- **Shadow Strategy:** resting card shadow; no hover lift, because the card isn't itself a link (see the Tap-Lift Rule).
-- **Border:** a 6px colored top edge that rotates through the four accents by position in the grid.
-- **Internal Padding:** 34px 28px 30px. Body text is Muted Text and flexes, so the trailing button aligns across a row.
+- **Event pages** (`page-intro--art`) put the real flyer on the right as a tilted print, with a 96px date sticker on its top-left corner. On phones the art drops below the text (230px wide, or 320px for wide art).
+- **Self-maintaining:** an event intro carries `data-start` / `data-end`. Once the event ends, `js/site.js` shows its `.ended-note` ("That's a wrap…") and hides the buttons and status pill.
+- Sections below the intro sit on alternating cream and Sage Wash bands, each opened by an h2 with the gold underline bar.
+
+### Structures for interior content
+No card grids. Content sits in a few quiet, repeatable forms:
+- **Facts** (`dl.facts`): a white panel of hairline-divided cells. Each cell has an uppercase `lifeguard-teal-deep` label, a Fredoka 600 value and an optional muted small line. Use it for When / Where / Who at a glance. Stacks on phones.
+- **Ways** (`ul.ways`, `--ways: 2|3`): one white panel split into hairline columns, the same form as the homepage's Find Your Place. Each column has an h3, a sentence or short list, and one action. Use it for steps, choices and prize tiers.
+- **Rows** (`ul.rows`): hairline-divided list items, with text on the left and one action on the right (a quiet small pill or an arrow link). Use it for forms, "who do I ask", open roles and shortcuts.
+- **Timeline** (`ol.timeline`, items with `data-date`): dated rows for meetings. The script:
+  - marks past items "Past" in muted type;
+  - highlights the next one on Sun Wash with a "Next meeting" pill;
+  - copies the next date into any `[data-next-date]` span.
+- **Fold** (`details.fold`): a hairline-bordered disclosure with a Fredoka summary, a muted one-line hint and a drawn chevron. Use it for long or rarely needed text: legal rules, category specs, the Ed Foundation explainer, voting rules.
+- **Tags** (`ul.tags`): plain white pills with a hairline border and no shadow, so they read as labels rather than buttons.
+- **People** (`ul.people`): the directory, in two hairline-divided columns. Each entry shows the role (h3), name, full email address and a muted one-line description. Open roles read "Open: could this be you?" with a link to volunteers@.
+- **Coming-up list** (`ul.up-list`): compact tappable rows for dated events on /links, Calendar and News.
+  - Each row has a 56px date circle in the event's hue, a title, a when-line and an optional status pill, and lifts 2px on hover.
+  - Past items hide themselves, and an `.up-empty` line shows when nothing is left.
+- **Flyer grid** (`ul.flyer-grid`): event flyers as tilted prints, each linking to the full-size image.
 
 ### Flyer Wall (signature)
 The homepage's events section: the events as an invitation and a wall of real flyers, maintained by volunteers in plain HTML.
@@ -315,9 +314,6 @@ The homepage's events section: the events as an invitation and a wall of real fl
 ### Find Your Place
 One white panel, three hairline-divided columns: Join the PTA (gold "Join for $11"), Lend a hand (quiet), Give (quiet; states 501(c)(3) and tax-deductible). Each has an h3, one reassuring sentence and one action. Below it, on the Sage Wash band, three plain-text blocks (PTA meetings, News & announcements, Questions?), each ending in an arrow link.
 
-### Callout
-- White, 22px corners, resting shadow, a 7px Sun left edge, 28px 30px padding, 26px vertical margin. Used for "good to know" blocks on interior pages. It does not lift.
-
 ### Navigation
 - **Desktop:** Fredoka 500 at 0.95rem, ink text, pill-shaped hit areas with 9px 12px padding. Hover fills Cyan Wash with `lifeguard-teal-deep` text. The active page gets `lifeguard-teal-deep` text and a 3px Sun bar underneath.
 - **Dropdowns:** a ▾ caret. The menu is a white 14px-radius panel with the resting shadow, 244px minimum width, opening on hover or focus-within, with an invisible 6px bridge so it never closes mid-move. Items are left-aligned and stretch the full menu width.
@@ -326,7 +322,7 @@ One white panel, three hairline-divided columns: Join the PTA (gold "Join for $1
 - **Mobile (≤1080px):** a 44×44 menu button with a drawn three-line icon that becomes an X. It sets `aria-expanded` and closes on Esc or a tap outside. The nav becomes a full-width white rounded panel below the header row, with dropdowns expanded inline and indented 12px, and Donate stretched full-width.
 
 ### Footer
-Deep Kelp Ink with the four-color stripe on top, three columns of Footer Text links that turn Sun gold on hover, uppercase Sun column headings, 40px round social icons in 44px tap targets (Facebook, Instagram, X), and a hairline-divided centered legal line.
+Deep Kelp Ink with the four-color stripe on top, three columns of Footer Text links that turn Sun gold on hover, uppercase Sun column headings (h2s, so page outlines never skip a level), 40px round social icons in 44px tap targets (Facebook, Instagram), and a hairline-divided centered legal line.
 
 ## Do's and Don'ts
 
@@ -351,4 +347,5 @@ Deep Kelp Ink with the four-color stripe on top, three columns of Footer Text li
 - **Don't** set paragraphs in Fredoka or Poppins, or buttons and nav in Nunito Sans (the Three-Voice Rule).
 - **Don't** make informational blocks lift on hover. Lift means "clickable" (the Tap-Lift Rule).
 - **Don't** put any text on Pacific Cyan; it is a graphic color only.
-- **Don't** add new rows of same-size emoji-tile cards. The existing card grids on interior pages are legacy, not a pattern to extend.
+- **Don't** build pages out of same-size cards, emoji icon tiles, or boxes with thick colored side or top edges. Use Facts, Ways, Rows, Timeline and Fold.
+- **Don't** state a fundraising goal amount anywhere on the site.
