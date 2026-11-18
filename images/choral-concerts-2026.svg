@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="600" height="750">
+  <!-- Choral concerts art: a row of singing kids with notes floating up. No words, so it serves EN + ES. -->
+  <defs>
+    <g id="eighth"><ellipse cx="0" cy="0" rx="21" ry="15" transform="rotate(-22)"/><rect x="15" y="-98" width="7" height="98" rx="3"/><path d="M18,-98 c4,26 36,34 31,68 c-3,-21 -17,-29 -31,-31 z"/></g>
+    <g id="quarter"><ellipse cx="0" cy="0" rx="21" ry="15" transform="rotate(-22)"/><rect x="15" y="-98" width="7" height="98" rx="3"/></g>
+    <g id="pair"><ellipse cx="0" cy="0" rx="21" ry="15" transform="rotate(-22)"/><ellipse cx="74" cy="-16" rx="21" ry="15" transform="rotate(-22 74 -16)"/><rect x="15" y="-98" width="7" height="98" rx="3"/><rect x="89" y="-114" width="7" height="98" rx="3"/><path d="M15,-98 L96,-114 L96,-94 L15,-78 z"/></g>
+    <path id="spark" d="M0,-16 C2,-4 4,-2 16,0 C4,2 2,4 0,16 C-2,4 -4,2 -16,0 C-4,-2 -2,-4 0,-16 z"/>
+  </defs>
+  <rect width="600" height="750" fill="#fff8ec"/>
+  <circle cx="470" cy="150" r="190" fill="#e3f4f8"/>
+  <circle cx="90" cy="380" r="120" fill="#fdf0cf"/>
+
+  <!-- the staff, swinging across the page -->
+  <g fill="none" stroke="#0e7f96" stroke-width="3" stroke-linecap="round" opacity="0.35">
+    <path d="M-10,250 C150,170 330,330 610,190"/>
+    <path d="M-10,272 C150,192 330,352 610,212"/>
+    <path d="M-10,294 C150,214 330,374 610,234"/>
+    <path d="M-10,316 C150,236 330,396 610,256"/>
+    <path d="M-10,338 C150,258 330,418 610,278"/>
+  </g>
+
+  <!-- notes -->
+  <use href="#eighth" x="96" y="292" fill="#0e7f96"/>
+  <use href="#pair" x="214" y="318" fill="#12a8c9"/>
+  <use href="#quarter" x="396" y="296" fill="#093943"/>
+  <use href="#eighth" x="500" y="238" fill="#f5c02e"/>
+  <use href="#quarter" x="300" y="470" fill="#7cc6b0" transform="rotate(-10 300 470)"/>
+  <use href="#eighth" x="150" y="500" fill="#f5c02e" transform="rotate(8 150 500)"/>
+  <use href="#eighth" x="470" y="470" fill="#12a8c9" transform="rotate(12 470 470)"/>
+
+  <g fill="#f5c02e">
+    <use href="#spark" x="300" y="120"/>
+    <use href="#spark" x="70" y="140" transform="scale(1)"/>
+    <use href="#spark" x="548" y="370"/>
+    <use href="#spark" x="380" y="560" opacity="0.8"/>
+  </g>
+
+  <!-- the choir -->
+  <g>
+    <ellipse cx="70" cy="790" rx="62" ry="150" fill="#12a8c9"/>
+    <ellipse cx="185" cy="775" rx="62" ry="150" fill="#f5c02e"/>
+    <ellipse cx="300" cy="790" rx="62" ry="150" fill="#0e7f96"/>
+    <ellipse cx="415" cy="775" rx="62" ry="150" fill="#7cc6b0"/>
+    <ellipse cx="530" cy="790" rx="62" ry="150" fill="#093943"/>
+
+    <circle cx="70" cy="612" r="44" fill="#c98b5e"/>
+    <circle cx="185" cy="597" r="44" fill="#f3c9a5"/>
+    <circle cx="300" cy="612" r="44" fill="#8d5a3b"/>
+    <circle cx="415" cy="597" r="44" fill="#e8b48a"/>
+    <circle cx="530" cy="612" r="44" fill="#a8704a"/>
+
+    <!-- hair -->
+    <path d="M26,606 a44,44 0 0 1 88,0 c-18,-14 -52,-16 -88,0 z" fill="#2b1a12"/>
+    <path d="M141,591 a44,44 0 0 1 88,0 c0,0 -6,-22 -44,-22 c-30,0 -44,22 -44,22 z" fill="#c2702e"/>
+    <path d="M254,612 a46,46 0 0 1 92,0 c-4,-26 -20,-34 -46,-34 c-26,0 -42,8 -46,34 z" fill="#1c120c"/>
+    <path d="M371,591 a44,44 0 0 1 88,0 l0,30 c-6,-30 -10,-40 -44,-46 c-34,6 -38,16 -44,46 z" fill="#5a3a22"/>
+    <path d="M486,606 a44,44 0 0 1 88,0 c-24,-10 -64,-10 -88,0 z" fill="#140c08"/>
+
+    <!-- faces: eyes closed in song, mouths open -->
+    <g fill="none" stroke="#093943" stroke-width="4" stroke-linecap="round">
+      <path d="M53,612 q6,5 12,0 M77,612 q6,5 12,0"/>
+      <path d="M168,597 q6,5 12,0 M192,597 q6,5 12,0"/>
+      <path d="M283,612 q6,5 12,0 M307,612 q6,5 12,0"/>
+      <path d="M398,597 q6,5 12,0 M422,597 q6,5 12,0"/>
+      <path d="M513,612 q6,5 12,0 M537,612 q6,5 12,0"/>
+    </g>
+    <g fill="#093943">
+      <ellipse cx="71" cy="634" rx="8" ry="10"/>
+      <ellipse cx="186" cy="619" rx="8" ry="10"/>
+      <ellipse cx="301" cy="634" rx="8" ry="10"/>
+      <ellipse cx="416" cy="619" rx="8" ry="10"/>
+      <ellipse cx="531" cy="634" rx="8" ry="10"/>
+    </g>
+  </g>
+</svg>
